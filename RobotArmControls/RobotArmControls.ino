@@ -100,7 +100,7 @@ void loop() {
     digitalWrite(pinReady, LOW);
     ready = 0;
     write_b();
-    rstBias += 1380;
+    rstBias += 1680;
   }
   
   if (rstBias > 5000) {
