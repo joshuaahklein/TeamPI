@@ -60,9 +60,10 @@ void write_a() {
   write_dash();
 }
 
+//Actually writing "z" for "zulu"
 void write_b() {
   write_dash();
-  write_dot();
+  write_dash();
   write_dot();
   write_dot();
 }
