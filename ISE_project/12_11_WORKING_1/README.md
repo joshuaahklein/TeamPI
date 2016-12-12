@@ -17,8 +17,8 @@
   This is implemented through a state machine controlled by two buttons, one for starting a sampling write to BRAM (T18), and one for starting a burst read (R18).
 
 ### fft_8192.v 
-: This module is the generated FFT module. There is plenty of documentation for this core here: https://www.xilinx.com/support/documentation/ip_documentation/xfft_ds260.pdf
-: This FFT takes input from the BRAM, which outputs to the FFT in burst mode once the FFT starts collecting inputs.
+  This module is the generated FFT module. There is plenty of documentation for this core here: https://www.xilinx.com/support/documentation/ip_documentation/xfft_ds260.pdf
+  This FFT takes input from the BRAM, which outputs to the FFT in burst mode once the FFT starts collecting inputs.
   
 ### speech_algo.v 
   This is a state machine implementation of the post-FFT processing on our signal.
