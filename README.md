@@ -21,7 +21,11 @@
   Open the RobotArmControls.ino in the Arduino IDE and upload the file to the Arduino Uno.  Pins 0 and 1 are input pins to write A and B, respectively.  Pin 10 is the output "ready" pin that goes to the FPGA.  
 
 #### Voice-Recognition Algorithm
-
+  The algorithm takes the average power spectra of the voice recorded and compares that to a threshold to determine what has been said.
+  
+## Acknowledgements
+  Credit to the audio codec used in this project goes to HampsterWorks Zedboard Audio Project: http://hamsterworks.co.nz/mediawiki/index.php/Zedboard_Audio
+  This project used a generated IP core for the FFT module.
 
 ## Authors
 
