@@ -1,0 +1,28 @@
+BINNING COEFFICIENTS:
+RESULT_ALPHA is the value of binning the 20 datapoints for alpha's. RESULT_ZULU is the value for zulu's datapoints.
+RESULT_MIDPT is the value to do the comparison with and is the average of RESULT_ALPHA and RESULT_ZULU.
+  
+Since across all speakers, the value of zulu after binning is greater than the value for alpha:
+If greater than RESULT_MIDPT, guess zulu.
+If less than RESULT_MIDPT, guess alpha.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+NEVIN:
+RESULT_MIDPT	6.8485e+05
+
+RESULT_ALPHA	1.6852e+05
+RESULT_ZULU		1.2012e+06
+
+------------------------
+JOSH:
+RESULT_MIDPT	9.4144e+05
+
+RESULT_ALPHA	4.2114e+05
+RESULT_ZULU		1.4618e+06
+
+------------------------
+PHILIP:
+RESULT_MIDPT	4.3296+05
+
+RESULT_ALPHA	1.3207+05
+RESULT_ZULU		7.3385+05
