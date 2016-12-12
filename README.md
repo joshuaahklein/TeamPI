@@ -5,15 +5,15 @@
 ## Getting Started
 
 ### Hardware Prerequisites
--Ardunio Uno
--PC with Windows OS (XP or later)
--Robotic Arm Edge
--Zedboard
--Seeed Arduino Relay Shield v2.0
+- Ardunio Uno
+- PC with Windows OS (XP or later)
+- Robotic Arm Edge
+- Zedboard
+- Seeed Arduino Relay Shield v2.0
 
 ### Software Prerequisites
--Arduino IDE
--Xilinx ISE
+- Arduino IDE
+- Xilinx ISE
 
 ### Installing
 
@@ -29,7 +29,7 @@
 
 ## Authors
 
-Joshua Klein
-Nevin Zheng
-Sami Shahin
-Phil Yuan
+* Joshua Klein
+* Nevin Zheng
+* Sami Shahin
+* Phil Yuan
