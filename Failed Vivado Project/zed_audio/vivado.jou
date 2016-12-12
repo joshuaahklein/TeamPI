@@ -1,0 +1,335 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 25 02:59:38 2016
+# Process ID: 7740
+# Current directory: C:/Users/Philip/Desktop/Zedboard/zed_audio
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6352 C:\Users\Philip\Desktop\Zedboard\zed_audio\zed_audio.xpr
+# Log file: C:/Users/Philip/Desktop/Zedboard/zed_audio/vivado.log
+# Journal file: C:/Users/Philip/Desktop/Zedboard/zed_audio\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.xpr
+open_bd_design {C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:adau1761_controller:1.0 adau1761_controller_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins adau1761_controller_0/S00_AXI]
+make_wrapper -files [get_files C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+startgroup
+create_bd_port -dir I adau1761_cout
+connect_bd_net [get_bd_pins /adau1761_controller_0/adau1761_cout] [get_bd_ports adau1761_cout]
+endgroup
+startgroup
+create_bd_port -dir O adau1761_cclk
+connect_bd_net [get_bd_pins /adau1761_controller_0/adau1761_cclk] [get_bd_ports adau1761_cclk]
+endgroup
+startgroup
+create_bd_port -dir O adau1761_clatchn
+connect_bd_net [get_bd_pins /adau1761_controller_0/adau1761_clatchn] [get_bd_ports adau1761_clatchn]
+endgroup
+startgroup
+create_bd_port -dir O adau1761_cdata
+connect_bd_net [get_bd_pins /adau1761_controller_0/adau1761_cdata] [get_bd_ports adau1761_cdata]
+endgroup
+make_wrapper -files [get_files C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/sources_1/bd/design_1/design_1.bd] -top
+file mkdir C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/constrs_1
+file mkdir C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/constrs_1/new
+close [ open C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/constrs_1/new/constraints.xdc
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file mkdir C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.sdk
+file copy -force C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.runs/impl_1/design_1_wrapper.sysdef C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.sdk -hwspec C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {24} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {50.250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {41.875} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {305.592} CONFIG.CLKOUT1_PHASE_ERROR {298.923}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_0/clk_in1]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins clk_wiz_0/resetn]
+create_bd_port -dir O adau1761_mclk
+set_property location {4 1138 238} [get_bd_cells clk_wiz_0]
+create_bd_port -dir O led0
+connect_bd_net [get_bd_ports led0] [get_bd_pins clk_wiz_0/locked]
+connect_bd_net [get_bd_ports adau1761_mclk] [get_bd_pins clk_wiz_0/clk_out1]
+create_peripheral xilinx.com user adau1761_data 1.0 -dir C:/Users/Philip/Desktop/Zedboard/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:adau1761_data:1.0]
+set_property VALUE 8 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:adau1761_data:1.0]]]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:adau1761_data:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:adau1761_data:1.0]
+set_property  ip_repo_paths  {C:/Users/Philip/Desktop/Zedboard/ip_repo/adau1761_data_1.0 C:/Users/Philip/Desktop/Zedboard/ip_repo/adau1761_controller_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_adau1761_data_v1_0 -directory C:/Users/Philip/Desktop/Zedboard/ip_repo c:/Users/Philip/Desktop/Zedboard/ip_repo/adau1761_data_1.0/component.xml
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Philip/Desktop/Zedboard/ip_repo/adau1761_data_1.0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:adau1761_data:1.0 adau1761_data_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins adau1761_data_0/S00_AXI]
+startgroup
+create_bd_port -dir I adau1761_bclk
+connect_bd_net [get_bd_pins /adau1761_data_0/adau1761_bclk] [get_bd_ports adau1761_bclk]
+endgroup
+startgroup
+create_bd_port -dir I adau1761_lrclk
+connect_bd_net [get_bd_pins /adau1761_data_0/adau1761_lrclk] [get_bd_ports adau1761_lrclk]
+endgroup
+startgroup
+create_bd_port -dir I adau1761_adc_sdata
+connect_bd_net [get_bd_pins /adau1761_data_0/adau1761_adc_sdata] [get_bd_ports adau1761_adc_sdata]
+endgroup
+startgroup
+create_bd_port -dir O adau1761_dac_sdata
+connect_bd_net [get_bd_pins /adau1761_data_0/adau1761_dac_sdata] [get_bd_ports adau1761_dac_sdata]
+endgroup
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 64 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/adau1761_controller_0/inst/read_data[0]} {design_1_i/adau1761_controller_0/inst/read_data[1]} {design_1_i/adau1761_controller_0/inst/read_data[2]} {design_1_i/adau1761_controller_0/inst/read_data[3]} {design_1_i/adau1761_controller_0/inst/read_data[4]} {design_1_i/adau1761_controller_0/inst/read_data[5]} {design_1_i/adau1761_controller_0/inst/read_data[6]} {design_1_i/adau1761_controller_0/inst/read_data[7]} {design_1_i/adau1761_controller_0/inst/read_data[8]} {design_1_i/adau1761_controller_0/inst/read_data[9]} {design_1_i/adau1761_controller_0/inst/read_data[10]} {design_1_i/adau1761_controller_0/inst/read_data[11]} {design_1_i/adau1761_controller_0/inst/read_data[12]} {design_1_i/adau1761_controller_0/inst/read_data[13]} {design_1_i/adau1761_controller_0/inst/read_data[14]} {design_1_i/adau1761_controller_0/inst/read_data[15]} {design_1_i/adau1761_controller_0/inst/read_data[16]} {design_1_i/adau1761_controller_0/inst/read_data[17]} {design_1_i/adau1761_controller_0/inst/read_data[18]} {design_1_i/adau1761_controller_0/inst/read_data[19]} {design_1_i/adau1761_controller_0/inst/read_data[20]} {design_1_i/adau1761_controller_0/inst/read_data[21]} {design_1_i/adau1761_controller_0/inst/read_data[22]} {design_1_i/adau1761_controller_0/inst/read_data[23]} {design_1_i/adau1761_controller_0/inst/read_data[24]} {design_1_i/adau1761_controller_0/inst/read_data[25]} {design_1_i/adau1761_controller_0/inst/read_data[26]} {design_1_i/adau1761_controller_0/inst/read_data[27]} {design_1_i/adau1761_controller_0/inst/read_data[28]} {design_1_i/adau1761_controller_0/inst/read_data[29]} {design_1_i/adau1761_controller_0/inst/read_data[30]} {design_1_i/adau1761_controller_0/inst/read_data[31]} {design_1_i/adau1761_controller_0/inst/read_data[32]} {design_1_i/adau1761_controller_0/inst/read_data[33]} {design_1_i/adau1761_controller_0/inst/read_data[34]} {design_1_i/adau1761_controller_0/inst/read_data[35]} {design_1_i/adau1761_controller_0/inst/read_data[36]} {design_1_i/adau1761_controller_0/inst/read_data[37]} {design_1_i/adau1761_controller_0/inst/read_data[38]} {design_1_i/adau1761_controller_0/inst/read_data[39]} {design_1_i/adau1761_controller_0/inst/read_data[40]} {design_1_i/adau1761_controller_0/inst/read_data[41]} {design_1_i/adau1761_controller_0/inst/read_data[42]} {design_1_i/adau1761_controller_0/inst/read_data[43]} {design_1_i/adau1761_controller_0/inst/read_data[44]} {design_1_i/adau1761_controller_0/inst/read_data[45]} {design_1_i/adau1761_controller_0/inst/read_data[46]} {design_1_i/adau1761_controller_0/inst/read_data[47]} {design_1_i/adau1761_controller_0/inst/read_data[48]} {design_1_i/adau1761_controller_0/inst/read_data[49]} {design_1_i/adau1761_controller_0/inst/read_data[50]} {design_1_i/adau1761_controller_0/inst/read_data[51]} {design_1_i/adau1761_controller_0/inst/read_data[52]} {design_1_i/adau1761_controller_0/inst/read_data[53]} {design_1_i/adau1761_controller_0/inst/read_data[54]} {design_1_i/adau1761_controller_0/inst/read_data[55]} {design_1_i/adau1761_controller_0/inst/read_data[56]} {design_1_i/adau1761_controller_0/inst/read_data[57]} {design_1_i/adau1761_controller_0/inst/read_data[58]} {design_1_i/adau1761_controller_0/inst/read_data[59]} {design_1_i/adau1761_controller_0/inst/read_data[60]} {design_1_i/adau1761_controller_0/inst/read_data[61]} {design_1_i/adau1761_controller_0/inst/read_data[62]} {design_1_i/adau1761_controller_0/inst/read_data[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {design_1_i/adau1761_controller_0/inst/address[0]} {design_1_i/adau1761_controller_0/inst/address[1]} {design_1_i/adau1761_controller_0/inst/address[2]} {design_1_i/adau1761_controller_0/inst/address[3]} {design_1_i/adau1761_controller_0/inst/address[4]} {design_1_i/adau1761_controller_0/inst/address[5]} {design_1_i/adau1761_controller_0/inst/address[6]} {design_1_i/adau1761_controller_0/inst/address[7]} {design_1_i/adau1761_controller_0/inst/address[8]} {design_1_i/adau1761_controller_0/inst/address[9]} {design_1_i/adau1761_controller_0/inst/address[10]} {design_1_i/adau1761_controller_0/inst/address[11]} {design_1_i/adau1761_controller_0/inst/address[12]} {design_1_i/adau1761_controller_0/inst/address[13]} {design_1_i/adau1761_controller_0/inst/address[14]} {design_1_i/adau1761_controller_0/inst/address[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {design_1_i/adau1761_controller_0/inst/nbytes[0]} {design_1_i/adau1761_controller_0/inst/nbytes[1]} {design_1_i/adau1761_controller_0/inst/nbytes[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {design_1_i/adau1761_controller_0/inst/write_data[0]} {design_1_i/adau1761_controller_0/inst/write_data[1]} {design_1_i/adau1761_controller_0/inst/write_data[2]} {design_1_i/adau1761_controller_0/inst/write_data[3]} {design_1_i/adau1761_controller_0/inst/write_data[4]} {design_1_i/adau1761_controller_0/inst/write_data[5]} {design_1_i/adau1761_controller_0/inst/write_data[6]} {design_1_i/adau1761_controller_0/inst/write_data[7]} {design_1_i/adau1761_controller_0/inst/write_data[8]} {design_1_i/adau1761_controller_0/inst/write_data[9]} {design_1_i/adau1761_controller_0/inst/write_data[10]} {design_1_i/adau1761_controller_0/inst/write_data[11]} {design_1_i/adau1761_controller_0/inst/write_data[12]} {design_1_i/adau1761_controller_0/inst/write_data[13]} {design_1_i/adau1761_controller_0/inst/write_data[14]} {design_1_i/adau1761_controller_0/inst/write_data[15]} {design_1_i/adau1761_controller_0/inst/write_data[16]} {design_1_i/adau1761_controller_0/inst/write_data[17]} {design_1_i/adau1761_controller_0/inst/write_data[18]} {design_1_i/adau1761_controller_0/inst/write_data[19]} {design_1_i/adau1761_controller_0/inst/write_data[20]} {design_1_i/adau1761_controller_0/inst/write_data[21]} {design_1_i/adau1761_controller_0/inst/write_data[22]} {design_1_i/adau1761_controller_0/inst/write_data[23]} {design_1_i/adau1761_controller_0/inst/write_data[24]} {design_1_i/adau1761_controller_0/inst/write_data[25]} {design_1_i/adau1761_controller_0/inst/write_data[26]} {design_1_i/adau1761_controller_0/inst/write_data[27]} {design_1_i/adau1761_controller_0/inst/write_data[28]} {design_1_i/adau1761_controller_0/inst/write_data[29]} {design_1_i/adau1761_controller_0/inst/write_data[30]} {design_1_i/adau1761_controller_0/inst/write_data[31]} {design_1_i/adau1761_controller_0/inst/write_data[32]} {design_1_i/adau1761_controller_0/inst/write_data[33]} {design_1_i/adau1761_controller_0/inst/write_data[34]} {design_1_i/adau1761_controller_0/inst/write_data[35]} {design_1_i/adau1761_controller_0/inst/write_data[36]} {design_1_i/adau1761_controller_0/inst/write_data[37]} {design_1_i/adau1761_controller_0/inst/write_data[38]} {design_1_i/adau1761_controller_0/inst/write_data[39]} {design_1_i/adau1761_controller_0/inst/write_data[40]} {design_1_i/adau1761_controller_0/inst/write_data[41]} {design_1_i/adau1761_controller_0/inst/write_data[42]} {design_1_i/adau1761_controller_0/inst/write_data[43]} {design_1_i/adau1761_controller_0/inst/write_data[44]} {design_1_i/adau1761_controller_0/inst/write_data[45]} {design_1_i/adau1761_controller_0/inst/write_data[46]} {design_1_i/adau1761_controller_0/inst/write_data[47]} {design_1_i/adau1761_controller_0/inst/write_data[48]} {design_1_i/adau1761_controller_0/inst/write_data[49]} {design_1_i/adau1761_controller_0/inst/write_data[50]} {design_1_i/adau1761_controller_0/inst/write_data[51]} {design_1_i/adau1761_controller_0/inst/write_data[52]} {design_1_i/adau1761_controller_0/inst/write_data[53]} {design_1_i/adau1761_controller_0/inst/write_data[54]} {design_1_i/adau1761_controller_0/inst/write_data[55]} {design_1_i/adau1761_controller_0/inst/write_data[56]} {design_1_i/adau1761_controller_0/inst/write_data[57]} {design_1_i/adau1761_controller_0/inst/write_data[58]} {design_1_i/adau1761_controller_0/inst/write_data[59]} {design_1_i/adau1761_controller_0/inst/write_data[60]} {design_1_i/adau1761_controller_0/inst/write_data[61]} {design_1_i/adau1761_controller_0/inst/write_data[62]} {design_1_i/adau1761_controller_0/inst/write_data[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cclk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cdata ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_clatchn ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cout ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list design_1_i/adau1761_controller_0/inst/busy ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list design_1_i/adau1761_controller_0/inst/read ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list design_1_i/adau1761_controller_0/inst/reset ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list design_1_i/adau1761_controller_0/inst/start ]]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 64 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/adau1761_controller_0/inst/read_data[0]} {design_1_i/adau1761_controller_0/inst/read_data[1]} {design_1_i/adau1761_controller_0/inst/read_data[2]} {design_1_i/adau1761_controller_0/inst/read_data[3]} {design_1_i/adau1761_controller_0/inst/read_data[4]} {design_1_i/adau1761_controller_0/inst/read_data[5]} {design_1_i/adau1761_controller_0/inst/read_data[6]} {design_1_i/adau1761_controller_0/inst/read_data[7]} {design_1_i/adau1761_controller_0/inst/read_data[8]} {design_1_i/adau1761_controller_0/inst/read_data[9]} {design_1_i/adau1761_controller_0/inst/read_data[10]} {design_1_i/adau1761_controller_0/inst/read_data[11]} {design_1_i/adau1761_controller_0/inst/read_data[12]} {design_1_i/adau1761_controller_0/inst/read_data[13]} {design_1_i/adau1761_controller_0/inst/read_data[14]} {design_1_i/adau1761_controller_0/inst/read_data[15]} {design_1_i/adau1761_controller_0/inst/read_data[16]} {design_1_i/adau1761_controller_0/inst/read_data[17]} {design_1_i/adau1761_controller_0/inst/read_data[18]} {design_1_i/adau1761_controller_0/inst/read_data[19]} {design_1_i/adau1761_controller_0/inst/read_data[20]} {design_1_i/adau1761_controller_0/inst/read_data[21]} {design_1_i/adau1761_controller_0/inst/read_data[22]} {design_1_i/adau1761_controller_0/inst/read_data[23]} {design_1_i/adau1761_controller_0/inst/read_data[24]} {design_1_i/adau1761_controller_0/inst/read_data[25]} {design_1_i/adau1761_controller_0/inst/read_data[26]} {design_1_i/adau1761_controller_0/inst/read_data[27]} {design_1_i/adau1761_controller_0/inst/read_data[28]} {design_1_i/adau1761_controller_0/inst/read_data[29]} {design_1_i/adau1761_controller_0/inst/read_data[30]} {design_1_i/adau1761_controller_0/inst/read_data[31]} {design_1_i/adau1761_controller_0/inst/read_data[32]} {design_1_i/adau1761_controller_0/inst/read_data[33]} {design_1_i/adau1761_controller_0/inst/read_data[34]} {design_1_i/adau1761_controller_0/inst/read_data[35]} {design_1_i/adau1761_controller_0/inst/read_data[36]} {design_1_i/adau1761_controller_0/inst/read_data[37]} {design_1_i/adau1761_controller_0/inst/read_data[38]} {design_1_i/adau1761_controller_0/inst/read_data[39]} {design_1_i/adau1761_controller_0/inst/read_data[40]} {design_1_i/adau1761_controller_0/inst/read_data[41]} {design_1_i/adau1761_controller_0/inst/read_data[42]} {design_1_i/adau1761_controller_0/inst/read_data[43]} {design_1_i/adau1761_controller_0/inst/read_data[44]} {design_1_i/adau1761_controller_0/inst/read_data[45]} {design_1_i/adau1761_controller_0/inst/read_data[46]} {design_1_i/adau1761_controller_0/inst/read_data[47]} {design_1_i/adau1761_controller_0/inst/read_data[48]} {design_1_i/adau1761_controller_0/inst/read_data[49]} {design_1_i/adau1761_controller_0/inst/read_data[50]} {design_1_i/adau1761_controller_0/inst/read_data[51]} {design_1_i/adau1761_controller_0/inst/read_data[52]} {design_1_i/adau1761_controller_0/inst/read_data[53]} {design_1_i/adau1761_controller_0/inst/read_data[54]} {design_1_i/adau1761_controller_0/inst/read_data[55]} {design_1_i/adau1761_controller_0/inst/read_data[56]} {design_1_i/adau1761_controller_0/inst/read_data[57]} {design_1_i/adau1761_controller_0/inst/read_data[58]} {design_1_i/adau1761_controller_0/inst/read_data[59]} {design_1_i/adau1761_controller_0/inst/read_data[60]} {design_1_i/adau1761_controller_0/inst/read_data[61]} {design_1_i/adau1761_controller_0/inst/read_data[62]} {design_1_i/adau1761_controller_0/inst/read_data[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {design_1_i/adau1761_controller_0/inst/address[0]} {design_1_i/adau1761_controller_0/inst/address[1]} {design_1_i/adau1761_controller_0/inst/address[2]} {design_1_i/adau1761_controller_0/inst/address[3]} {design_1_i/adau1761_controller_0/inst/address[4]} {design_1_i/adau1761_controller_0/inst/address[5]} {design_1_i/adau1761_controller_0/inst/address[6]} {design_1_i/adau1761_controller_0/inst/address[7]} {design_1_i/adau1761_controller_0/inst/address[8]} {design_1_i/adau1761_controller_0/inst/address[9]} {design_1_i/adau1761_controller_0/inst/address[10]} {design_1_i/adau1761_controller_0/inst/address[11]} {design_1_i/adau1761_controller_0/inst/address[12]} {design_1_i/adau1761_controller_0/inst/address[13]} {design_1_i/adau1761_controller_0/inst/address[14]} {design_1_i/adau1761_controller_0/inst/address[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {design_1_i/adau1761_controller_0/inst/nbytes[0]} {design_1_i/adau1761_controller_0/inst/nbytes[1]} {design_1_i/adau1761_controller_0/inst/nbytes[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {design_1_i/adau1761_controller_0/inst/write_data[0]} {design_1_i/adau1761_controller_0/inst/write_data[1]} {design_1_i/adau1761_controller_0/inst/write_data[2]} {design_1_i/adau1761_controller_0/inst/write_data[3]} {design_1_i/adau1761_controller_0/inst/write_data[4]} {design_1_i/adau1761_controller_0/inst/write_data[5]} {design_1_i/adau1761_controller_0/inst/write_data[6]} {design_1_i/adau1761_controller_0/inst/write_data[7]} {design_1_i/adau1761_controller_0/inst/write_data[8]} {design_1_i/adau1761_controller_0/inst/write_data[9]} {design_1_i/adau1761_controller_0/inst/write_data[10]} {design_1_i/adau1761_controller_0/inst/write_data[11]} {design_1_i/adau1761_controller_0/inst/write_data[12]} {design_1_i/adau1761_controller_0/inst/write_data[13]} {design_1_i/adau1761_controller_0/inst/write_data[14]} {design_1_i/adau1761_controller_0/inst/write_data[15]} {design_1_i/adau1761_controller_0/inst/write_data[16]} {design_1_i/adau1761_controller_0/inst/write_data[17]} {design_1_i/adau1761_controller_0/inst/write_data[18]} {design_1_i/adau1761_controller_0/inst/write_data[19]} {design_1_i/adau1761_controller_0/inst/write_data[20]} {design_1_i/adau1761_controller_0/inst/write_data[21]} {design_1_i/adau1761_controller_0/inst/write_data[22]} {design_1_i/adau1761_controller_0/inst/write_data[23]} {design_1_i/adau1761_controller_0/inst/write_data[24]} {design_1_i/adau1761_controller_0/inst/write_data[25]} {design_1_i/adau1761_controller_0/inst/write_data[26]} {design_1_i/adau1761_controller_0/inst/write_data[27]} {design_1_i/adau1761_controller_0/inst/write_data[28]} {design_1_i/adau1761_controller_0/inst/write_data[29]} {design_1_i/adau1761_controller_0/inst/write_data[30]} {design_1_i/adau1761_controller_0/inst/write_data[31]} {design_1_i/adau1761_controller_0/inst/write_data[32]} {design_1_i/adau1761_controller_0/inst/write_data[33]} {design_1_i/adau1761_controller_0/inst/write_data[34]} {design_1_i/adau1761_controller_0/inst/write_data[35]} {design_1_i/adau1761_controller_0/inst/write_data[36]} {design_1_i/adau1761_controller_0/inst/write_data[37]} {design_1_i/adau1761_controller_0/inst/write_data[38]} {design_1_i/adau1761_controller_0/inst/write_data[39]} {design_1_i/adau1761_controller_0/inst/write_data[40]} {design_1_i/adau1761_controller_0/inst/write_data[41]} {design_1_i/adau1761_controller_0/inst/write_data[42]} {design_1_i/adau1761_controller_0/inst/write_data[43]} {design_1_i/adau1761_controller_0/inst/write_data[44]} {design_1_i/adau1761_controller_0/inst/write_data[45]} {design_1_i/adau1761_controller_0/inst/write_data[46]} {design_1_i/adau1761_controller_0/inst/write_data[47]} {design_1_i/adau1761_controller_0/inst/write_data[48]} {design_1_i/adau1761_controller_0/inst/write_data[49]} {design_1_i/adau1761_controller_0/inst/write_data[50]} {design_1_i/adau1761_controller_0/inst/write_data[51]} {design_1_i/adau1761_controller_0/inst/write_data[52]} {design_1_i/adau1761_controller_0/inst/write_data[53]} {design_1_i/adau1761_controller_0/inst/write_data[54]} {design_1_i/adau1761_controller_0/inst/write_data[55]} {design_1_i/adau1761_controller_0/inst/write_data[56]} {design_1_i/adau1761_controller_0/inst/write_data[57]} {design_1_i/adau1761_controller_0/inst/write_data[58]} {design_1_i/adau1761_controller_0/inst/write_data[59]} {design_1_i/adau1761_controller_0/inst/write_data[60]} {design_1_i/adau1761_controller_0/inst/write_data[61]} {design_1_i/adau1761_controller_0/inst/write_data[62]} {design_1_i/adau1761_controller_0/inst/write_data[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cclk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cdata ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_clatchn ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cout ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list design_1_i/adau1761_controller_0/inst/busy ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list design_1_i/adau1761_controller_0/inst/read ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list design_1_i/adau1761_controller_0/inst/reset ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list design_1_i/adau1761_controller_0/inst/start ]]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+close_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/clk_wiz_0/inst/clkfbout_buf_design_1_clk_wiz_0_0 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list design_1_i/processing_system7_0/inst/FCLK_CLK0 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list design_1_i/adau1761_data_0/inst/adau1761_adc_sdata ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list design_1_i/adau1761_data_0/inst/adau1761_bclk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list design_1_i/adau1761_data_0/inst/adau1761_lrclk ]]
+set_property port_width 64 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {design_1_i/adau1761_controller_0/inst/read_data[0]} {design_1_i/adau1761_controller_0/inst/read_data[1]} {design_1_i/adau1761_controller_0/inst/read_data[2]} {design_1_i/adau1761_controller_0/inst/read_data[3]} {design_1_i/adau1761_controller_0/inst/read_data[4]} {design_1_i/adau1761_controller_0/inst/read_data[5]} {design_1_i/adau1761_controller_0/inst/read_data[6]} {design_1_i/adau1761_controller_0/inst/read_data[7]} {design_1_i/adau1761_controller_0/inst/read_data[8]} {design_1_i/adau1761_controller_0/inst/read_data[9]} {design_1_i/adau1761_controller_0/inst/read_data[10]} {design_1_i/adau1761_controller_0/inst/read_data[11]} {design_1_i/adau1761_controller_0/inst/read_data[12]} {design_1_i/adau1761_controller_0/inst/read_data[13]} {design_1_i/adau1761_controller_0/inst/read_data[14]} {design_1_i/adau1761_controller_0/inst/read_data[15]} {design_1_i/adau1761_controller_0/inst/read_data[16]} {design_1_i/adau1761_controller_0/inst/read_data[17]} {design_1_i/adau1761_controller_0/inst/read_data[18]} {design_1_i/adau1761_controller_0/inst/read_data[19]} {design_1_i/adau1761_controller_0/inst/read_data[20]} {design_1_i/adau1761_controller_0/inst/read_data[21]} {design_1_i/adau1761_controller_0/inst/read_data[22]} {design_1_i/adau1761_controller_0/inst/read_data[23]} {design_1_i/adau1761_controller_0/inst/read_data[24]} {design_1_i/adau1761_controller_0/inst/read_data[25]} {design_1_i/adau1761_controller_0/inst/read_data[26]} {design_1_i/adau1761_controller_0/inst/read_data[27]} {design_1_i/adau1761_controller_0/inst/read_data[28]} {design_1_i/adau1761_controller_0/inst/read_data[29]} {design_1_i/adau1761_controller_0/inst/read_data[30]} {design_1_i/adau1761_controller_0/inst/read_data[31]} {design_1_i/adau1761_controller_0/inst/read_data[32]} {design_1_i/adau1761_controller_0/inst/read_data[33]} {design_1_i/adau1761_controller_0/inst/read_data[34]} {design_1_i/adau1761_controller_0/inst/read_data[35]} {design_1_i/adau1761_controller_0/inst/read_data[36]} {design_1_i/adau1761_controller_0/inst/read_data[37]} {design_1_i/adau1761_controller_0/inst/read_data[38]} {design_1_i/adau1761_controller_0/inst/read_data[39]} {design_1_i/adau1761_controller_0/inst/read_data[40]} {design_1_i/adau1761_controller_0/inst/read_data[41]} {design_1_i/adau1761_controller_0/inst/read_data[42]} {design_1_i/adau1761_controller_0/inst/read_data[43]} {design_1_i/adau1761_controller_0/inst/read_data[44]} {design_1_i/adau1761_controller_0/inst/read_data[45]} {design_1_i/adau1761_controller_0/inst/read_data[46]} {design_1_i/adau1761_controller_0/inst/read_data[47]} {design_1_i/adau1761_controller_0/inst/read_data[48]} {design_1_i/adau1761_controller_0/inst/read_data[49]} {design_1_i/adau1761_controller_0/inst/read_data[50]} {design_1_i/adau1761_controller_0/inst/read_data[51]} {design_1_i/adau1761_controller_0/inst/read_data[52]} {design_1_i/adau1761_controller_0/inst/read_data[53]} {design_1_i/adau1761_controller_0/inst/read_data[54]} {design_1_i/adau1761_controller_0/inst/read_data[55]} {design_1_i/adau1761_controller_0/inst/read_data[56]} {design_1_i/adau1761_controller_0/inst/read_data[57]} {design_1_i/adau1761_controller_0/inst/read_data[58]} {design_1_i/adau1761_controller_0/inst/read_data[59]} {design_1_i/adau1761_controller_0/inst/read_data[60]} {design_1_i/adau1761_controller_0/inst/read_data[61]} {design_1_i/adau1761_controller_0/inst/read_data[62]} {design_1_i/adau1761_controller_0/inst/read_data[63]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 3 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list {design_1_i/adau1761_controller_0/inst/nbytes[0]} {design_1_i/adau1761_controller_0/inst/nbytes[1]} {design_1_i/adau1761_controller_0/inst/nbytes[2]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 16 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list {design_1_i/adau1761_controller_0/inst/address[0]} {design_1_i/adau1761_controller_0/inst/address[1]} {design_1_i/adau1761_controller_0/inst/address[2]} {design_1_i/adau1761_controller_0/inst/address[3]} {design_1_i/adau1761_controller_0/inst/address[4]} {design_1_i/adau1761_controller_0/inst/address[5]} {design_1_i/adau1761_controller_0/inst/address[6]} {design_1_i/adau1761_controller_0/inst/address[7]} {design_1_i/adau1761_controller_0/inst/address[8]} {design_1_i/adau1761_controller_0/inst/address[9]} {design_1_i/adau1761_controller_0/inst/address[10]} {design_1_i/adau1761_controller_0/inst/address[11]} {design_1_i/adau1761_controller_0/inst/address[12]} {design_1_i/adau1761_controller_0/inst/address[13]} {design_1_i/adau1761_controller_0/inst/address[14]} {design_1_i/adau1761_controller_0/inst/address[15]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 64 [get_debug_ports u_ila_1/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe3]
+connect_debug_port u_ila_1/probe3 [get_nets [list {design_1_i/adau1761_controller_0/inst/write_data[0]} {design_1_i/adau1761_controller_0/inst/write_data[1]} {design_1_i/adau1761_controller_0/inst/write_data[2]} {design_1_i/adau1761_controller_0/inst/write_data[3]} {design_1_i/adau1761_controller_0/inst/write_data[4]} {design_1_i/adau1761_controller_0/inst/write_data[5]} {design_1_i/adau1761_controller_0/inst/write_data[6]} {design_1_i/adau1761_controller_0/inst/write_data[7]} {design_1_i/adau1761_controller_0/inst/write_data[8]} {design_1_i/adau1761_controller_0/inst/write_data[9]} {design_1_i/adau1761_controller_0/inst/write_data[10]} {design_1_i/adau1761_controller_0/inst/write_data[11]} {design_1_i/adau1761_controller_0/inst/write_data[12]} {design_1_i/adau1761_controller_0/inst/write_data[13]} {design_1_i/adau1761_controller_0/inst/write_data[14]} {design_1_i/adau1761_controller_0/inst/write_data[15]} {design_1_i/adau1761_controller_0/inst/write_data[16]} {design_1_i/adau1761_controller_0/inst/write_data[17]} {design_1_i/adau1761_controller_0/inst/write_data[18]} {design_1_i/adau1761_controller_0/inst/write_data[19]} {design_1_i/adau1761_controller_0/inst/write_data[20]} {design_1_i/adau1761_controller_0/inst/write_data[21]} {design_1_i/adau1761_controller_0/inst/write_data[22]} {design_1_i/adau1761_controller_0/inst/write_data[23]} {design_1_i/adau1761_controller_0/inst/write_data[24]} {design_1_i/adau1761_controller_0/inst/write_data[25]} {design_1_i/adau1761_controller_0/inst/write_data[26]} {design_1_i/adau1761_controller_0/inst/write_data[27]} {design_1_i/adau1761_controller_0/inst/write_data[28]} {design_1_i/adau1761_controller_0/inst/write_data[29]} {design_1_i/adau1761_controller_0/inst/write_data[30]} {design_1_i/adau1761_controller_0/inst/write_data[31]} {design_1_i/adau1761_controller_0/inst/write_data[32]} {design_1_i/adau1761_controller_0/inst/write_data[33]} {design_1_i/adau1761_controller_0/inst/write_data[34]} {design_1_i/adau1761_controller_0/inst/write_data[35]} {design_1_i/adau1761_controller_0/inst/write_data[36]} {design_1_i/adau1761_controller_0/inst/write_data[37]} {design_1_i/adau1761_controller_0/inst/write_data[38]} {design_1_i/adau1761_controller_0/inst/write_data[39]} {design_1_i/adau1761_controller_0/inst/write_data[40]} {design_1_i/adau1761_controller_0/inst/write_data[41]} {design_1_i/adau1761_controller_0/inst/write_data[42]} {design_1_i/adau1761_controller_0/inst/write_data[43]} {design_1_i/adau1761_controller_0/inst/write_data[44]} {design_1_i/adau1761_controller_0/inst/write_data[45]} {design_1_i/adau1761_controller_0/inst/write_data[46]} {design_1_i/adau1761_controller_0/inst/write_data[47]} {design_1_i/adau1761_controller_0/inst/write_data[48]} {design_1_i/adau1761_controller_0/inst/write_data[49]} {design_1_i/adau1761_controller_0/inst/write_data[50]} {design_1_i/adau1761_controller_0/inst/write_data[51]} {design_1_i/adau1761_controller_0/inst/write_data[52]} {design_1_i/adau1761_controller_0/inst/write_data[53]} {design_1_i/adau1761_controller_0/inst/write_data[54]} {design_1_i/adau1761_controller_0/inst/write_data[55]} {design_1_i/adau1761_controller_0/inst/write_data[56]} {design_1_i/adau1761_controller_0/inst/write_data[57]} {design_1_i/adau1761_controller_0/inst/write_data[58]} {design_1_i/adau1761_controller_0/inst/write_data[59]} {design_1_i/adau1761_controller_0/inst/write_data[60]} {design_1_i/adau1761_controller_0/inst/write_data[61]} {design_1_i/adau1761_controller_0/inst/write_data[62]} {design_1_i/adau1761_controller_0/inst/write_data[63]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe4]
+connect_debug_port u_ila_1/probe4 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cclk ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe5]
+connect_debug_port u_ila_1/probe5 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cdata ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe6]
+connect_debug_port u_ila_1/probe6 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_clatchn ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe7]
+connect_debug_port u_ila_1/probe7 [get_nets [list design_1_i/adau1761_controller_0/inst/adau1761_cout ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe8]
+connect_debug_port u_ila_1/probe8 [get_nets [list design_1_i/adau1761_controller_0/inst/busy ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe9]
+connect_debug_port u_ila_1/probe9 [get_nets [list design_1_i/adau1761_controller_0/inst/read ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe10]
+connect_debug_port u_ila_1/probe10 [get_nets [list design_1_i/adau1761_controller_0/inst/reset ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe11]
+connect_debug_port u_ila_1/probe11 [get_nets [list design_1_i/adau1761_controller_0/inst/start ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/Philip/Desktop/Zedboard/zed_audio/zed_audio.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

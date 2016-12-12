@@ -1,0 +1,47 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 40 -defaultsOSRD
+preplace port adau1761_dac_sdata -pg 1 -y 380 -defaultsOSRD
+preplace port adau1761_lrclk -pg 1 -y 480 -defaultsOSRD
+preplace port adau1761_clatchn -pg 1 -y 220 -defaultsOSRD
+preplace port adau1761_cdata -pg 1 -y 240 -defaultsOSRD
+preplace port adau1761_cclk -pg 1 -y 200 -defaultsOSRD
+preplace port led0 -pg 1 -y 530 -defaultsOSRD
+preplace port adau1761_cout -pg 1 -y 250 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 60 -defaultsOSRD
+preplace port adau1761_mclk -pg 1 -y 510 -defaultsOSRD
+preplace port adau1761_bclk -pg 1 -y 450 -defaultsOSRD
+preplace port adau1761_adc_sdata -pg 1 -y 470 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 200 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 520 -defaultsOSRD
+preplace inst adau1761_data_0 -pg 1 -lvl 3 -y 380 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 360 -defaultsOSRD
+preplace inst adau1761_controller_0 -pg 1 -lvl 3 -y 220 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 40 NJ 40 NJ
+preplace netloc adau1761_bclk_1 1 0 3 NJ 450 NJ 450 720J
+preplace netloc clk_wiz_0_locked 1 3 1 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 450
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 450 400 740
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 30 510 420 510 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 720
+preplace netloc adau1761_data_0_adau1761_dac_sdata 1 3 1 NJ
+preplace netloc adau1761_adc_sdata_1 1 0 3 NJ 470 NJ 470 760J
+preplace netloc adau1761_controller_0_adau1761_cclk 1 3 1 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 60 NJ 60 NJ
+preplace netloc adau1761_lrclk_1 1 0 3 NJ 480 NJ 480 750J
+preplace netloc clk_wiz_0_clk_out1 1 3 1 NJ
+preplace netloc adau1761_cout_1 1 0 3 NJ 250 410J 50 730J
+preplace netloc adau1761_controller_0_adau1761_clatchn 1 3 1 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 530 440 530 730
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
+preplace netloc adau1761_controller_0_adau1761_cdata 1 3 1 NJ
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 430
+levelinfo -pg 1 0 220 590 930 1100 -top 0 -bot 580
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_ps7_cnt: "1",
+}
