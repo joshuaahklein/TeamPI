@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/ssshahin/Desktop/12-4-16/Project_Base/test_sampling_FFT_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_sampling_FFT" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/test_sampling_FFT/out_l" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_l[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out_l[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/out_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_r[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out_r[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/writeComplete" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writeComplete</obj_property>
+      <obj_property name="ObjectShortName">writeComplete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/some_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">some_data[6:0]</obj_property>
+      <obj_property name="ObjectShortName">some_data[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/start_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start_write</obj_property>
+      <obj_property name="ObjectShortName">start_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/start_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start_read</obj_property>
+      <obj_property name="ObjectShortName">start_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/new_sample" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">new_sample</obj_property>
+      <obj_property name="ObjectShortName">new_sample</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/in_l" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_l[23:0]</obj_property>
+      <obj_property name="ObjectShortName">in_l[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/in_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_r[23:0]</obj_property>
+      <obj_property name="ObjectShortName">in_r[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/readReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readReady</obj_property>
+      <obj_property name="ObjectShortName">readReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider12" type="divider">
+      <obj_property name="label">BRAM_controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/beginWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">beginWrite</obj_property>
+      <obj_property name="ObjectShortName">beginWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/beginRead" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">beginRead</obj_property>
+      <obj_property name="ObjectShortName">beginRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/inData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inData[23:0]</obj_property>
+      <obj_property name="ObjectShortName">inData[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/sample" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sample</obj_property>
+      <obj_property name="ObjectShortName">sample</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/outData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outData[23:0]</obj_property>
+      <obj_property name="ObjectShortName">outData[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/readReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readReady</obj_property>
+      <obj_property name="ObjectShortName">readReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/rw_Address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_Address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rw_Address[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/BC/read_write" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">read_write</obj_property>
+      <obj_property name="ObjectShortName">read_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider29" type="divider">
+      <obj_property name="label">FFT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/myFFT/xk_re" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">xk_re[27:0]</obj_property>
+      <obj_property name="ObjectShortName">xk_re[27:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/myFFT/xk_im" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">xk_im[27:0]</obj_property>
+      <obj_property name="ObjectShortName">xk_im[27:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/myFFT/unload" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">unload</obj_property>
+      <obj_property name="ObjectShortName">unload</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/myFFT/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/myFFT/dv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dv</obj_property>
+      <obj_property name="ObjectShortName">dv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_sampling_FFT/uut/myFFT/busy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+</wave_config>

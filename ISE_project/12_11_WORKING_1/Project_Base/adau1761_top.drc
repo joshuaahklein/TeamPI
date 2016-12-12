@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Dec 11 23:45:03 2016
+
+drc -z adau1761_top.ncd adau1761_top.pcf
+
+DRC detected 0 errors and 0 warnings.

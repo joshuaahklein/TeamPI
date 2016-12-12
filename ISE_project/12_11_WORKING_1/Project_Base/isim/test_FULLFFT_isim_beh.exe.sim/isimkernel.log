@@ -1,0 +1,29 @@
+Command line:
+   test_FULLFFT_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58856
+
+Sun Dec 11 23:37:11 2016
+
+
+ Elaboration Time: 0.514803 sec
+
+ Current Memory Usage: 651.432 Meg
+
+ Total Signals          : 32956
+ Total Nets             : 51102
+ Total Signal Drivers   : 13572
+ Total Blocks           : 5585
+ Total Primitive Blocks : 4150
+ Total Processes        : 24010
+ Total Traceable Variables  : 29969
+ Total Scalar Nets and Variables : 3825628
+Total Line Count : 102375
+
+ Total Simulation Time: 0.842405 sec
+
+ Current Memory Usage: 651.432 Meg
+
+Sun Dec 11 23:38:09 2016
+

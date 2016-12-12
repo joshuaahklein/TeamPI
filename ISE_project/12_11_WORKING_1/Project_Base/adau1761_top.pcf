@@ -1,0 +1,32 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Sun Dec 11 23:43:57 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "writeComplete" LOCATE = SITE "T22" LEVEL 1;
+COMP "rst" LOCATE = SITE "R16" LEVEL 1;
+COMP "start_read" LOCATE = SITE "R18" LEVEL 1;
+COMP "signalA" LOCATE = SITE "Y11" LEVEL 1;
+COMP "signalB" LOCATE = SITE "AA11" LEVEL 1;
+COMP "some_data<2>" LOCATE = SITE "U22" LEVEL 1;
+COMP "some_data<1>" LOCATE = SITE "U21" LEVEL 1;
+COMP "some_data<3>" LOCATE = SITE "T21" LEVEL 1;
+COMP "some_data<0>" LOCATE = SITE "V22" LEVEL 1;
+COMP "clk_100" LOCATE = SITE "Y9" LEVEL 1;
+COMP "FFT_DONE" LOCATE = SITE "W22" LEVEL 1;
+COMP "readySignal" LOCATE = SITE "Y19" LEVEL 1;
+COMP "AC_MCLK" LOCATE = SITE "AB2" LEVEL 1;
+COMP "AC_ADR0" LOCATE = SITE "AB1" LEVEL 1;
+COMP "AC_ADR1" LOCATE = SITE "Y5" LEVEL 1;
+COMP "AC_GPIO0" LOCATE = SITE "Y8" LEVEL 1;
+COMP "AC_GPIO1" LOCATE = SITE "AA7" LEVEL 1;
+COMP "AC_GPIO2" LOCATE = SITE "AA6" LEVEL 1;
+COMP "AC_GPIO3" LOCATE = SITE "Y6" LEVEL 1;
+COMP "AC_SCK" LOCATE = SITE "AB4" LEVEL 1;
+COMP "AC_SDA" LOCATE = SITE "AB5" LEVEL 1;
+COMP "start_write" LOCATE = SITE "T18" LEVEL 1;
+COMP "LEDa" LOCATE = SITE "U19" LEVEL 1;
+COMP "LEDb" LOCATE = SITE "U14" LEVEL 1;
+NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;
+SCHEMATIC END;
+

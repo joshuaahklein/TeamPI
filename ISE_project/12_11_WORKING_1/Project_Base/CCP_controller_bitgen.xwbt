@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=X:\My Documents\12-2-16\Project_Base\Project_Base\CCP_controller.ncd
+OUTFILE=X:\My Documents\12-2-16\Project_Base\Project_Base\CCP_controller.bit
+FAMILY=Zynq
+PART=xc7z020-3clg484
+WORKINGDIR=X:\My Documents\12-2-16\Project_Base\Project_Base
+LICENSE=WebPack
+USER_INFO=211078688_0_0_150

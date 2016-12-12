@@ -1,0 +1,131 @@
+
+****** PlanAhead v14.2 (64-bit)
+  **** Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source X:/12-4-16_v2/12-4-16_v2/Project_Base/pa.fromHdl.tcl
+# create_project -name Project_Base -dir "X:/12-4-16_v2/12-4-16_v2/Project_Base/planAhead_run_1" -part xc7z020clg484-3
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [C:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "adau1761_constraints.ucf" [current_fileset -constrset]
+Adding file 'X:/12-4-16_v2/12-4-16_v2/Project_Base/adau1761_constraints.ucf' to fileset 'constrs_1'
+# add_files [list {ipcore_dir/fft_8192.ngc}]
+# set hdlfile [add_files [list {ipcore_dir/fft_8192.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {i3c2.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {BRAM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {adau1761_configuration_data.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {speech_algo.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {i2s_data_interface.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {i2c.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fft_8192.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {debounce.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {CCP_controller.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {bramController.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ADAU1761_interface.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clocking.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {audio_manip.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {adau1761_izedboard.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {adau1761_top.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top adau1761_top $srcset
+# add_files [list {adau1761_constraints.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/chipscope_icon.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fftModule.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/fft_8192.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc7z020clg484-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/i3c2.vhd" into library work
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/adau1761_configuration_data.vhd" into library work
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/i2s_data_interface.vhd" into library work
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/i2c.vhd" into library work
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/ADAU1761_interface.vhd" into library work
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/clocking.vhd" into library work
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/adau1761_izedboard.vhd" into library work
+Parsing VHDL file "X:/12-4-16_v2/12-4-16_v2/Project_Base/adau1761_top.vhd" into library work
+Release 14.2 - ngc2edif P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Reading design fft_8192.ngc ...
+WARNING:NetListWriters:298 - No output is written to fft_8192.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file fft_8192.edif ...
+ngc2edif: Total memory usage is 89828 kilobytes
+
+Reading core file 'X:/12-4-16_v2/12-4-16_v2/Project_Base/ipcore_dir/fft_8192.ngc' for (cell view 'fft_8192', library 'work', file 'fft_8192.v')
+Parsing EDIF File [./.Xil/PlanAhead-5048-ENG00232490A346/ngc2edif/fft_8192.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-5048-ENG00232490A346/ngc2edif/fft_8192.edif]
+INFO: [Netlist 29-17] Analyzing 1273 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/zynq/IOStandards.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/zynq/drc.xml
+Parsing UCF File [X:/12-4-16_v2/12-4-16_v2/Project_Base/ipcore_dir/fft_8192.ncf]
+Finished Parsing UCF File [X:/12-4-16_v2/12-4-16_v2/Project_Base/ipcore_dir/fft_8192.ncf]
+Parsing UCF File [X:/12-4-16_v2/12-4-16_v2/Project_Base/adau1761_constraints.ucf]
+Finished Parsing UCF File [X:/12-4-16_v2/12-4-16_v2/Project_Base/adau1761_constraints.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1270 instances were transformed.
+  DSP48E => DSP48E1: 4 instances
+  FD => FDCE: 380 instances
+  FDE => FDCE: 848 instances
+  FDR => FDRE: 1 instances
+  FDS => FDSE: 2 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 1 instances
+  RAMB18 => RAMB18E1: 34 instances
+
+Phase 0 | Netlist Checksum: 92039174
+open_rtl_design: Time (s): elapsed = 00:00:20 . Memory (MB): peak = 773.914 ; gain = 355.695
+exit
+INFO: [Common 17-206] Exiting PlanAhead...
+INFO: [Common 17-83] Releasing license: PlanAhead

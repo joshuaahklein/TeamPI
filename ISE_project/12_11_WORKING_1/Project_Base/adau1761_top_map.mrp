@@ -1,0 +1,715 @@
+Release 14.2 Map P.28xd (nt64)
+Xilinx Mapping Report File for Design 'adau1761_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o adau1761_top_map.ncd adau1761_top.ngd adau1761_top.pcf 
+Target Device  : xc7z020
+Target Package : clg484
+Target Speed   : -3
+Mapper Version : zynq -- $Revision: 1.55 $
+Mapped Date    : Sun Dec 11 23:42:21 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,424 out of 106,400    2%
+    Number used as Flip Flops:               2,424
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,751 out of  53,200    3%
+    Number used as logic:                    1,338 out of  53,200    2%
+      Number using O6 output only:             861
+      Number using O5 output only:              55
+      Number using O5 and O6:                  422
+      Number used as ROM:                        0
+    Number used as Memory:                     287 out of  17,400    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:           287
+        Number using O6 output only:           121
+        Number using O5 output only:             1
+        Number using O5 and O6:                165
+    Number used exclusively as route-thrus:    126
+      Number with same-slice register load:    121
+      Number with same-slice carry load:         5
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   723 out of  13,300    5%
+  Number of LUT Flip Flop pairs used:        2,238
+    Number with an unused Flip Flop:           367 out of   2,238   16%
+    Number with an unused LUT:                 487 out of   2,238   21%
+    Number of fully used LUT-FF pairs:       1,384 out of   2,238   61%
+    Number of unique control sets:              21
+    Number of slice register sites lost
+      to control set restrictions:              36 out of 106,400    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        24 out of     200   12%
+    Number of LOCed IOBs:                       24 out of      24  100%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  7 out of     140    5%
+    Number using RAMB36E1 only:                  7
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                 36 out of     280   12%
+    Number using RAMB18E1 only:                 36
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+    Number used as BUFGCTRLs:                    0
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     200    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     200    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     200    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      16    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      16    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      72    0%
+  Number of BUFRs:                               0 out of      16    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                           29 out of     220   13%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       4    0%
+  Number of IN_FIFOs:                            0 out of      16    0%
+  Number of MMCME2_ADVs:                         1 out of       4   25%
+  Number of OUT_FIFOs:                           0 out of      16    0%
+  Number of PHASER_REFs:                         0 out of       4    0%
+  Number of PHY_CONTROLs:                        0 out of       4    0%
+  Number of PLLE2_ADVs:                          0 out of       4    0%
+  Number of PS7s:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                2.17
+
+Peak Memory Usage:  893 MB
+Total REAL time to MAP completion:  1 mins 37 secs 
+Total CPU time to MAP completion:   1 mins 37 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network audio_manip1/myFFT/my_fft/xk_index<12> has no
+   load.
+INFO:LIT:395 - The above info message is repeated 63 more times for the
+   following (max. 5 shown):
+   audio_manip1/myFFT/my_fft/xk_index<11>,
+   audio_manip1/myFFT/my_fft/xk_index<10>,
+   audio_manip1/myFFT/my_fft/xk_index<9>,
+   audio_manip1/myFFT/my_fft/xk_index<8>,
+   audio_manip1/myFFT/my_fft/xk_index<7>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:159 - Net Timing constraints on signal clk_100 are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  59 block(s) removed
+  83 block(s) optimized away
+ 138 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "audio_manip1/myFFT/my_fft/blk00000d3a" (SFF) removed.
+ The signal "audio_manip1/myFFT/my_fft/sig00001207" is loadless and has been
+removed.
+  Loadless block "audio_manip1/myFFT/my_fft/blk00000d3b" (SFF) removed.
+   The signal "audio_manip1/myFFT/my_fft/sig000011ac" is loadless and has been
+removed.
+    Loadless block "audio_manip1/myFFT/my_fft/blk00000cd3" (MUX) removed.
+     The signal "audio_manip1/myFFT/my_fft/sig000011c6" is loadless and has been
+removed.
+      Loadless block "audio_manip1/myFFT/my_fft/blk00000ced" (MUX) removed.
+       The signal "audio_manip1/myFFT/my_fft/sig000011fa" is loadless and has been
+removed.
+        Loadless block "audio_manip1/myFFT/my_fft/blk00000d21" (ROM) removed.
+       The signal "audio_manip1/myFFT/my_fft/sig000011ed" is loadless and has been
+removed.
+        Loadless block "audio_manip1/myFFT/my_fft/blk00000d14" (ROM) removed.
+     The signal "audio_manip1/myFFT/my_fft/sig000011c5" is loadless and has been
+removed.
+      Loadless block "audio_manip1/myFFT/my_fft/blk00000cec" (MUX) removed.
+       The signal "audio_manip1/myFFT/my_fft/sig000011e0" is loadless and has been
+removed.
+        Loadless block "audio_manip1/myFFT/my_fft/blk00000d07" (ROM) removed.
+       The signal "audio_manip1/myFFT/my_fft/sig000011d3" is loadless and has been
+removed.
+        Loadless block "audio_manip1/myFFT/my_fft/blk00000cfa" (ROM) removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<12>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<11>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<10>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<9>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<8>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<7>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<6>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<5>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<4>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<3>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<2>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<1>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/xk_index<0>" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000969" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000968" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000967" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000966" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000965" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000964" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000963" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000962" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000961" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000960" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000095f" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000095e" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000095d" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000095c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000095b" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000099c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000099b" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000099a" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ada" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad9" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad8" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad7" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad6" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad5" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad4" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad3" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad2" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad1" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ad0" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000acf" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000ace" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000acd" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000acc" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c90" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c8f" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c8e" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c8d" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c8c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c8b" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c8a" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c89" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c88" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c87" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c86" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c85" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c84" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c83" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000c82" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000cc3" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000cc2" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00000cc1" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000103a" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000103c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000103e" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001040" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001042" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001044" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001046" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001048" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000104a" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000104c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000104e" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001050" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000105d" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001075" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000aeb" (MUX) removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001069" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000105e" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001076" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000aed" (MUX) removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000106a" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000105f" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001077" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000aef" (MUX) removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000106b" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001060" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001078" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000af1" (MUX) removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000106c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001061" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001079" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000106d" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001062" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000107a" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000106e" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001063" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000107b" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000106f" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001064" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000107c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001070" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001065" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000107d" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001071" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001066" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000107e" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001072" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001067" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000107f" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001073" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001068" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001080" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001074" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/sig000012f9" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e2b" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig000012fa" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e2c" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig000012fb" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e2d" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig000012fc" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e2e" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig000012fd" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e2f" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig000012fe" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e30" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig000012ff" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e31" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001300" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e32" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001301" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e33" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001302" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e34" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001303" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e35" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001304" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e36" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig00001305" is sourceless and has been
+removed.
+ Sourceless block "audio_manip1/myFFT/my_fft/blk00000e37" (SFF) removed.
+The signal "audio_manip1/myFFT/my_fft/sig0000130c" is sourceless and has been
+removed.
+The signal "audio_manip1/myFFT/my_fft/blk00000003/sig00001535" is sourceless and
+has been removed.
+The signal "audio_manip1/myFFT/my_fft/blk00000003/sig00001533" is sourceless and
+has been removed.
+The signal "audio_manip1/myFFT/my_fft/blk000000b0/sig000016cc" is sourceless and
+has been removed.
+The signal "audio_manip1/myFFT/my_fft/blk000000b0/sig000016ca" is sourceless and
+has been removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b0e" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b0f" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b10" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b11" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b12" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b13" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b14" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b15" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b1a" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b1b" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b1c" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b1d" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b26" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b27" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b28" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000b29" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e1e" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e1f" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e20" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e21" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e22" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e23" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e24" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e25" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e26" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e27" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e28" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e29" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000e2a" (SRL16E) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000003/blk00000099" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk00000003/blk0000009b" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk000000b0/blk00000146" (ROM) removed.
+Unused block "audio_manip1/myFFT/my_fft/blk000000b0/blk00000148" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+VCC 		audio_manip1/myFFT/my_fft/blk00000001
+GND 		audio_manip1/myFFT/my_fft/blk00000002
+GND 		audio_manip1/myFFT/my_fft/blk00000003/blk00000004
+GND 		audio_manip1/myFFT/my_fft/blk000000b0/blk000000b1
+GND 		audio_manip1/myFFT/my_fft/blk00000573/blk00000574
+GND 		audio_manip1/myFFT/my_fft/blk000005b2/blk000005b3
+GND 		audio_manip1/myFFT/my_fft/blk000005d6/blk000005d7
+VCC 		audio_manip1/myFFT/my_fft/blk000005d6/blk000005d8
+GND 		audio_manip1/myFFT/my_fft/blk0000061d/blk0000061e
+GND 		audio_manip1/myFFT/my_fft/blk00000641/blk00000642
+GND 		audio_manip1/myFFT/my_fft/blk00000643/blk00000644
+GND 		audio_manip1/myFFT/my_fft/blk000006ae/blk000006af
+VCC 		audio_manip1/myFFT/my_fft/blk000006ae/blk000006b0
+GND 		audio_manip1/myFFT/my_fft/blk000006c3/blk000006c4
+GND 		audio_manip1/myFFT/my_fft/blk000006fa/blk000006fb
+GND 		audio_manip1/myFFT/my_fft/blk00000ac7/blk00000ac8
+VCC 		audio_manip1/myFFT/my_fft/blk00000ac7/blk00000ac9
+GND 		audio_manip1/myFFT/my_fft/blk00000acc/blk00000acd
+VCC 		audio_manip1/myFFT/my_fft/blk00000acc/blk00000ace
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000af3
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000af5
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000af7
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000af9
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000afb
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000afd
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000aff
+MUXF7 		audio_manip1/myFFT/my_fft/blk00000b01
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b16
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b17
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b18
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b19
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b1e
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b1f
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b20
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b21
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b22
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b23
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b24
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b25
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b2a
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b2b
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b2c
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b2d
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b2e
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b2f
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b30
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000b31
+   optimized to 0
+GND 		audio_manip1/myFFT/my_fft/blk00000ba2/blk00000ba3
+VCC 		audio_manip1/myFFT/my_fft/blk00000ba2/blk00000ba4
+GND 		audio_manip1/myFFT/my_fft/blk00000bbd/blk00000bbe
+VCC 		audio_manip1/myFFT/my_fft/blk00000bbd/blk00000bbf
+GND 		audio_manip1/myFFT/my_fft/blk00000c38/blk00000c39
+VCC 		audio_manip1/myFFT/my_fft/blk00000c38/blk00000c3a
+GND 		audio_manip1/myFFT/my_fft/blk00000c3d/blk00000c3e
+VCC 		audio_manip1/myFFT/my_fft/blk00000c3d/blk00000c3f
+GND 		audio_manip1/myFFT/my_fft/blk00000c42/blk00000c43
+VCC 		audio_manip1/myFFT/my_fft/blk00000c42/blk00000c44
+LUT6 		audio_manip1/myFFT/my_fft/blk00000cfb
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d08
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d09
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d0a
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d0b
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d0c
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d15
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d16
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d17
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d18
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d19
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d1a
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d1b
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d1c
+   optimized to 0
+LUT6 		audio_manip1/myFFT/my_fft/blk00000d1d
+   optimized to 0
+GND 		audio_manip1/myFFT/my_fft/blk00000d3c/blk00000d3d
+VCC 		audio_manip1/myFFT/my_fft/blk00000d3c/blk00000d3e
+GND 		audio_manip1/myFFT/my_fft/blk00000d41/blk00000d42
+VCC 		audio_manip1/myFFT/my_fft/blk00000d41/blk00000d43
+FDE 		audio_manip1/myFFT/my_fft/blk00000d66
+   optimized to 0
+GND 		audio_manip1/myFFT/my_fft/blk00000e38/blk00000e3b
+VCC 		audio_manip1/myFFT/my_fft/blk00000e38/blk00000e3c
+LUT3 		audio_manip1/myFFT/my_fft/blk00000eb1
+   optimized to 1
+FDS 		audio_manip1/myFFT/my_fft/blk00000eb2
+   optimized to 1
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AC_ADR0                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AC_ADR1                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AC_GPIO0                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AC_GPIO1                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| AC_GPIO2                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| AC_GPIO3                           | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| AC_MCLK                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AC_SCK                             | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| AC_SDA                             | IOB33            | BIDIR     | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| FFT_DONE                           | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LEDa                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| LEDb                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| clk_100                            | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| readySignal                        | IOB33            | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| signalA                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| signalB                            | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| some_data<0>                       | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| some_data<1>                       | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| some_data<2>                       | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| some_data<3>                       | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| start_read                         | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| start_write                        | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| writeComplete                      | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

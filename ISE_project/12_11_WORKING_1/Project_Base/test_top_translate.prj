@@ -1,0 +1,2 @@
+verilog work "netgen/translate/adau1761_top_translate.v"
+vhdl work "test_top.vhd"

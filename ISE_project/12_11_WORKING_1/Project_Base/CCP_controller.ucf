@@ -1,0 +1,11 @@
+#NET "clk"         LOC = Y9   | IOSTANDARD = LVCMOS33;
+
+#NET "writeB"      LOC = H18  | IOSTANDARD = LVCMOS33;
+
+#NET "readySignal" LOC = M15  | IOSTANDARD = LVCMOS33;
+
+#NET "writeA"      LOC = H17  | IOSTANDARD = LVCMOS33;
+
+#NET "signalA"     LOC = Y11  | IOSTANDARD = LVCMOS33;
+
+#NET "signalB"     LOC = AA11 | IOSTANDARD = LVCMOS33;

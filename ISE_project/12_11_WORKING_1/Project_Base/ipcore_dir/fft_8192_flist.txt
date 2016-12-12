@@ -1,0 +1,15 @@
+# Output products list for <fft_8192>
+_xmsgs\pn_parser.xmsgs
+fft_8192.asy
+fft_8192.gise
+fft_8192.ngc
+fft_8192.sym
+fft_8192.v
+fft_8192.veo
+fft_8192.xco
+fft_8192.xise
+fft_8192\doc\xfft_ds260.pdf
+fft_8192\doc\xfft_v7_1_readme.txt
+fft_8192\doc\xfft_v7_1_vinfo.html
+fft_8192_flist.txt
+fft_8192_xmdf.tcl

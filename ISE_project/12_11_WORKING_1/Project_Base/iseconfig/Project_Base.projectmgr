@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Project_Base" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/adau1761_izedboard - Behavioral C:|Users|Philip|Desktop|ISE_Projects|Project_Base|adau1761_izedboard.vhd</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|Philip|Desktop|ISE_Projects|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral/Inst_i2c - i2c - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|adau1761_top.vhd/audio_manip1 - audio_manip/BC - bramController</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|adau1761_top.vhd/audio_manip1 - audio_manip/ccp - CCP_controller</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|adau1761_top.vhd/audio_manip1 - audio_manip/myFFT - fft_FULL</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral X:|12-4-16_v2|12-4-16_v2|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral X:|My Documents|12-2-16|Project_Base|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral X:|My Documents|12-2-16|Project_Base|Project_Base|adau1761_top.vhd/audio_manip1 - audio_manip</ClosedNode>
+         <ClosedNode>/i2c - Behavioral C:|Users|Philip|Desktop|ISE_Projects|Project_Base|i2c.vhd</ClosedNode>
+         <ClosedNode>/testFFT X:|12-4-16_v2|12-4-16_v2|Project_Base|testFFT.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>adau1761_top - Behavioral (C:/Users/ssshahin/Desktop/12_11v2/12_11v2/Project_Base/adau1761_top.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000220000000020000000000000000000000000200000064ffffffff000000810000000300000002000002200000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>adau1761_top - Behavioral (C:/Users/ssshahin/Desktop/12_11v2/12_11v2/Project_Base/adau1761_top.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002d70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>adau1761_configuration_data.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Configure Target Device</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000010000000100000000000000000000000064ffffffff000000810000000000000001000001320000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Configure Target Device</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000143000000010000000100000000000000000000000064ffffffff000000810000000000000001000001430000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000143000000010000000100000000000000000000000064ffffffff000000810000000000000001000001430000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|Philip|Desktop|ISE_Projects|Project_Base|adau1761_top.vhd</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|ssshahin|Desktop|12-4-16|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral C:|Users|ssshahin|Desktop|12-4-16|Project_Base|adau1761_top.vhd/audio_manip1 - audio_manip/BC - bramController</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral X:|12-4-16_v2|12-4-16_v2|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral X:|My Documents|12-2-16|Project_Base|Project_Base|adau1761_top.vhd/Inst_adau1761_izedboard - adau1761_izedboard - Behavioral/Inst_i2c - i2c - Behavioral</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral X:|My Documents|12-2-16|Project_Base|Project_Base|adau1761_top.vhd/audio_manip1 - audio_manip</ClosedNode>
+         <ClosedNode>/adau1761_top - Behavioral X:|My Documents|12-2-16|Project_Base|Project_Base|adau1761_top.vhd/audio_manip1 - audio_manip/BC - bramController</ClosedNode>
+         <ClosedNode>/t_CCP_controller C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_CCP_controller.v</ClosedNode>
+         <ClosedNode>/t_CCP_controller C:|Users|ssshahin|Desktop|12-4-16|Project_Base|t_CCP_controller.v</ClosedNode>
+         <ClosedNode>/t_CCP_controller C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|t_CCP_controller.v</ClosedNode>
+         <ClosedNode>/t_audioManip C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_audioManip.v</ClosedNode>
+         <ClosedNode>/t_audioManip C:|Users|ssshahin|Desktop|12-4-16|Project_Base|t_audioManip.v</ClosedNode>
+         <ClosedNode>/t_audioManip C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|t_audioManip.v</ClosedNode>
+         <ClosedNode>/t_audioManip X:|12-4-16_v2|12-4-16_v2|Project_Base|t_audioManip.v</ClosedNode>
+         <ClosedNode>/t_audioManip X:|My Documents|12-2-16|Project_Base|Project_Base|t_audioManip.v</ClosedNode>
+         <ClosedNode>/t_bramController C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_bramController.v</ClosedNode>
+         <ClosedNode>/t_bramController C:|Users|ssshahin|Desktop|12-4-16|Project_Base|t_bramController.v</ClosedNode>
+         <ClosedNode>/t_bramController C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|t_bramController.v</ClosedNode>
+         <ClosedNode>/t_bramController X:|12-4-16_v2|12-4-16_v2|Project_Base|t_bramController.v</ClosedNode>
+         <ClosedNode>/t_bramController X:|My Documents|12-2-16|Project_Base|Project_Base|t_bramController.v/uut - bramController</ClosedNode>
+         <ClosedNode>/t_debounce C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_debounce.v</ClosedNode>
+         <ClosedNode>/t_debounce C:|Users|ssshahin|Desktop|12-4-16|Project_Base|t_debounce.v</ClosedNode>
+         <ClosedNode>/t_debounce C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|t_debounce.v</ClosedNode>
+         <ClosedNode>/t_debounce X:|12-4-16_v2|12-4-16_v2|Project_Base|t_debounce.v</ClosedNode>
+         <ClosedNode>/test_algo C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|test_algo.v</ClosedNode>
+         <ClosedNode>/test_feedback C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_feedback.v</ClosedNode>
+         <ClosedNode>/test_feedback C:|Users|ssshahin|Desktop|12-4-16|Project_Base|test_feedback.v</ClosedNode>
+         <ClosedNode>/test_feedback C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|test_feedback.v</ClosedNode>
+         <ClosedNode>/test_feedback X:|12-4-16_v2|12-4-16_v2|Project_Base|test_feedback.v</ClosedNode>
+         <ClosedNode>/test_myFFT C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_myFFT.v</ClosedNode>
+         <ClosedNode>/test_myFFT C:|Users|ssshahin|Desktop|12-4-16|Project_Base|test_myFFT.v</ClosedNode>
+         <ClosedNode>/test_myFFT X:|12-4-16_v2|12-4-16_v2|Project_Base|test_myFFT.v</ClosedNode>
+         <ClosedNode>/test_sampling_FFT C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_sampling_FFT.v</ClosedNode>
+         <ClosedNode>/test_sampling_FFT C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|test_sampling_FFT.v</ClosedNode>
+         <ClosedNode>/test_sampling_FFT X:|12-4-16_v2|12-4-16_v2|Project_Base|test_sampling_FFT.v</ClosedNode>
+         <ClosedNode>/test_system C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_system.v</ClosedNode>
+         <ClosedNode>/test_system C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|test_system.v</ClosedNode>
+         <ClosedNode>/test_system X:|12-4-16_v2|12-4-16_v2|Project_Base|test_system.v/uut - audio_manip/BC - bramController</ClosedNode>
+         <ClosedNode>/test_system X:|12-4-16_v2|12-4-16_v2|Project_Base|test_system.v/uut - audio_manip/myFFT - testFFT</ClosedNode>
+         <ClosedNode>/test_top - behavior C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_top.vhd</ClosedNode>
+         <ClosedNode>/test_top - behavior C:|Users|ssshahin|Desktop|12_11v2|12_11v2|Project_Base|test_top.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>test_FULLFFT (C:/Users/ssshahin/Desktop/12_11v2/12_11v2/Project_Base/test_FULLFFT.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000135000000020000000000000000000000000200000064ffffffff000000810000000300000002000001350000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>test_FULLFFT (C:/Users/ssshahin/Desktop/12_11v2/12_11v2/Project_Base/test_FULLFFT.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000143000000010000000100000000000000000000000064ffffffff000000810000000000000001000001430000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000016d0000016901000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000143000000010000000100000000000000000000000064ffffffff000000810000000000000001000001430000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostTransSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/t_bramController X:|My Documents|12-2-16|Project_Base|Project_Base|t_bramController.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>test_top - behavior (C:/Users/nevzheng/Desktop/12_11v1/Project_Base/test_top.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000014d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000014d0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>test_top - behavior (C:/Users/nevzheng/Desktop/12_11v1/Project_Base/test_top.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001aa000000010000000100000000000000000000000064ffffffff000000810000000000000001000001aa0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001aa000000010000000100000000000000000000000064ffffffff000000810000000000000001000001aa0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostMapSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/t_CCP_controller C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_CCP_controller.v</ClosedNode>
+         <ClosedNode>/t_audioManip C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_audioManip.v</ClosedNode>
+         <ClosedNode>/t_bramController C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_bramController.v</ClosedNode>
+         <ClosedNode>/t_debounce C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_debounce.v</ClosedNode>
+         <ClosedNode>/test_feedback C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_feedback.v</ClosedNode>
+         <ClosedNode>/test_myFFT C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_myFFT.v</ClosedNode>
+         <ClosedNode>/test_sampling_FFT C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_sampling_FFT.v</ClosedNode>
+         <ClosedNode>/test_system C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_system.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000119000000020000000000000000000000000200000064ffffffff000000810000000300000002000001190000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostMapSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/t_CCP_controller C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_CCP_controller.v</ClosedNode>
+         <ClosedNode>/t_audioManip C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_audioManip.v</ClosedNode>
+         <ClosedNode>/t_bramController C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_bramController.v</ClosedNode>
+         <ClosedNode>/t_debounce C:|Users|nevzheng|Desktop|12_11v1|Project_Base|t_debounce.v</ClosedNode>
+         <ClosedNode>/test_algo C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_algo.v</ClosedNode>
+         <ClosedNode>/test_feedback C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_feedback.v</ClosedNode>
+         <ClosedNode>/test_myFFT C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_myFFT.v</ClosedNode>
+         <ClosedNode>/test_sampling_FFT C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_sampling_FFT.v</ClosedNode>
+         <ClosedNode>/test_system C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_system.v</ClosedNode>
+         <ClosedNode>/test_top - behavior C:|Users|nevzheng|Desktop|12_11v1|Project_Base|test_top.vhd/uut - adau1761_top</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>test_top - behavior (C:/Users/nevzheng/Desktop/12_11v1/Project_Base/test_top.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000014b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000014b0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>test_top - behavior (C:/Users/nevzheng/Desktop/12_11v1/Project_Base/test_top.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Post-Place &amp; Route Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000196000000010000000100000000000000000000000064ffffffff000000810000000000000001000001960000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Post-Place &amp; Route Model</CurrentItem>
+   </ItemView>
+</Project>

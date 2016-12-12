@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="X:/My Documents/12-2-16/Project_Base/Project_Base/t_bramController_isim_translate.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="t_bramController" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/t_bramController/outData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outData[23:0]</obj_property>
+      <obj_property name="ObjectShortName">outData[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/readReady" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readReady</obj_property>
+      <obj_property name="ObjectShortName">readReady</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/writeComplete" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writeComplete</obj_property>
+      <obj_property name="ObjectShortName">writeComplete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/inData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inData[23:0]</obj_property>
+      <obj_property name="ObjectShortName">inData[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/beginWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">beginWrite</obj_property>
+      <obj_property name="ObjectShortName">beginWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/beginRead" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">beginRead</obj_property>
+      <obj_property name="ObjectShortName">beginRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/readAddress" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">readAddress[2:0]</obj_property>
+      <obj_property name="ObjectShortName">readAddress[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/sample" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sample</obj_property>
+      <obj_property name="ObjectShortName">sample</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/WORD_WIDTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WORD_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WORD_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/t_bramController/ADDR_WIDTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider57" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/t_bramController/uut/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/beginWrite" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">beginWrite</obj_property>
+         <obj_property name="ObjectShortName">beginWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/beginRead" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">beginRead</obj_property>
+         <obj_property name="ObjectShortName">beginRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/sample" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sample</obj_property>
+         <obj_property name="ObjectShortName">sample</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/readReady" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">readReady</obj_property>
+         <obj_property name="ObjectShortName">readReady</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/writeComplete" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">writeComplete</obj_property>
+         <obj_property name="ObjectShortName">writeComplete</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/readAddress" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">readAddress[2:0]</obj_property>
+         <obj_property name="ObjectShortName">readAddress[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">inData[23:0]</obj_property>
+         <obj_property name="ObjectShortName">inData[23:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/outData" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">outData[23:0]</obj_property>
+         <obj_property name="ObjectShortName">outData[23:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_23_IBUF_3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_23_IBUF_3</obj_property>
+         <obj_property name="ObjectShortName">inData_23_IBUF_3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_22_IBUF_4" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_22_IBUF_4</obj_property>
+         <obj_property name="ObjectShortName">inData_22_IBUF_4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_21_IBUF_5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_21_IBUF_5</obj_property>
+         <obj_property name="ObjectShortName">inData_21_IBUF_5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_20_IBUF_6" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_20_IBUF_6</obj_property>
+         <obj_property name="ObjectShortName">inData_20_IBUF_6</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_19_IBUF_7" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_19_IBUF_7</obj_property>
+         <obj_property name="ObjectShortName">inData_19_IBUF_7</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_18_IBUF_8" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_18_IBUF_8</obj_property>
+         <obj_property name="ObjectShortName">inData_18_IBUF_8</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_17_IBUF_9" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_17_IBUF_9</obj_property>
+         <obj_property name="ObjectShortName">inData_17_IBUF_9</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_16_IBUF_10" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_16_IBUF_10</obj_property>
+         <obj_property name="ObjectShortName">inData_16_IBUF_10</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_15_IBUF_11" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_15_IBUF_11</obj_property>
+         <obj_property name="ObjectShortName">inData_15_IBUF_11</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_14_IBUF_12" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_14_IBUF_12</obj_property>
+         <obj_property name="ObjectShortName">inData_14_IBUF_12</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_13_IBUF_13" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_13_IBUF_13</obj_property>
+         <obj_property name="ObjectShortName">inData_13_IBUF_13</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_12_IBUF_14" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_12_IBUF_14</obj_property>
+         <obj_property name="ObjectShortName">inData_12_IBUF_14</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_11_IBUF_15" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_11_IBUF_15</obj_property>
+         <obj_property name="ObjectShortName">inData_11_IBUF_15</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_10_IBUF_16" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_10_IBUF_16</obj_property>
+         <obj_property name="ObjectShortName">inData_10_IBUF_16</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_9_IBUF_17" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_9_IBUF_17</obj_property>
+         <obj_property name="ObjectShortName">inData_9_IBUF_17</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_8_IBUF_18" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_8_IBUF_18</obj_property>
+         <obj_property name="ObjectShortName">inData_8_IBUF_18</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_7_IBUF_19" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_7_IBUF_19</obj_property>
+         <obj_property name="ObjectShortName">inData_7_IBUF_19</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_6_IBUF_20" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_6_IBUF_20</obj_property>
+         <obj_property name="ObjectShortName">inData_6_IBUF_20</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_5_IBUF_21" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_5_IBUF_21</obj_property>
+         <obj_property name="ObjectShortName">inData_5_IBUF_21</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_4_IBUF_22" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_4_IBUF_22</obj_property>
+         <obj_property name="ObjectShortName">inData_4_IBUF_22</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_3_IBUF_23" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_3_IBUF_23</obj_property>
+         <obj_property name="ObjectShortName">inData_3_IBUF_23</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_2_IBUF_24" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_2_IBUF_24</obj_property>
+         <obj_property name="ObjectShortName">inData_2_IBUF_24</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_1_IBUF_25" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_1_IBUF_25</obj_property>
+         <obj_property name="ObjectShortName">inData_1_IBUF_25</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/inData_0_IBUF_26" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">inData_0_IBUF_26</obj_property>
+         <obj_property name="ObjectShortName">inData_0_IBUF_26</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/clk_BUFGP" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_BUFGP</obj_property>
+         <obj_property name="ObjectShortName">clk_BUFGP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/reset_IBUF_28" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_IBUF_28</obj_property>
+         <obj_property name="ObjectShortName">reset_IBUF_28</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/beginWrite_IBUF_29" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">beginWrite_IBUF_29</obj_property>
+         <obj_property name="ObjectShortName">beginWrite_IBUF_29</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/beginRead_IBUF_30" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">beginRead_IBUF_30</obj_property>
+         <obj_property name="ObjectShortName">beginRead_IBUF_30</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/sample_IBUF_31" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sample_IBUF_31</obj_property>
+         <obj_property name="ObjectShortName">sample_IBUF_31</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/readReady_OBUF_56" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">readReady_OBUF_56</obj_property>
+         <obj_property name="ObjectShortName">readReady_OBUF_56</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/writeComplete_OBUF_57" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">writeComplete_OBUF_57</obj_property>
+         <obj_property name="ObjectShortName">writeComplete_OBUF_57</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/read_write_58" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_write_58</obj_property>
+         <obj_property name="ObjectShortName">read_write_58</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/state_FSM_FFd1_59" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">state_FSM_FFd1_59</obj_property>
+         <obj_property name="ObjectShortName">state_FSM_FFd1_59</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/state_FSM_FFd2_60" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">state_FSM_FFd2_60</obj_property>
+         <obj_property name="ObjectShortName">state_FSM_FFd2_60</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/_n0078" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">_n0078</obj_property>
+         <obj_property name="ObjectShortName">_n0078</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\state[4]_GND_1_o_Select_20_o " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\state[4]_GND_1_o_Select_20_o </obj_property>
+         <obj_property name="ObjectShortName">\state[4]_GND_1_o_Select_20_o </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/GND_1_o_GND_1_o_equal_9_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">GND_1_o_GND_1_o_equal_9_o</obj_property>
+         <obj_property name="ObjectShortName">GND_1_o_GND_1_o_equal_9_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/N1_inv" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">N1_inv</obj_property>
+         <obj_property name="ObjectShortName">N1_inv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\state_FSM_FFd2-In " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\state_FSM_FFd2-In </obj_property>
+         <obj_property name="ObjectShortName">\state_FSM_FFd2-In </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\state_FSM_FFd1-In " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\state_FSM_FFd1-In </obj_property>
+         <obj_property name="ObjectShortName">\state_FSM_FFd1-In </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux214_3_73 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux214_3_73 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux214_3_73 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux214_4_74 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux214_4_74 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux214_4_74 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux213_3_75 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux213_3_75 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux213_3_75 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux213_4_76 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux213_4_76 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux213_4_76 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux215_3_77 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux215_3_77 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux215_3_77 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux215_4_78 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux215_4_78 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux215_4_78 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux211_3_79 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux211_3_79 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux211_3_79 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux211_4_80 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux211_4_80 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux211_4_80 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux210_3_81 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux210_3_81 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux210_3_81 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux210_4_82 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux210_4_82 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux210_4_82 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux212_3_83 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux212_3_83 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux212_3_83 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux212_4_84 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux212_4_84 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux212_4_84 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux208_3_85 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux208_3_85 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux208_3_85 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux208_4_86 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux208_4_86 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux208_4_86 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux207_3_87 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux207_3_87 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux207_3_87 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux207_4_88 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux207_4_88 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux207_4_88 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux209_3_89 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux209_3_89 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux209_3_89 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux209_4_90 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux209_4_90 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux209_4_90 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux206_3_91 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux206_3_91 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux206_3_91 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux206_4_92 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux206_4_92 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux206_4_92 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux205_3_93 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux205_3_93 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux205_3_93 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux205_4_94 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux205_4_94 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux205_4_94 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux204_3_95 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux204_3_95 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux204_3_95 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux204_4_96 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux204_4_96 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux204_4_96 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux203_3_97 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux203_3_97 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux203_3_97 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux203_4_98 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux203_4_98 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux203_4_98 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux201_3_99 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux201_3_99 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux201_3_99 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux201_4_100 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux201_4_100 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux201_4_100 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux200_3_101 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux200_3_101 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux200_3_101 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux200_4_102 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux200_4_102 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux200_4_102 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux202_3_103 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux202_3_103 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux202_3_103 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux202_4_104 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux202_4_104 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux202_4_104 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux199_3_105 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux199_3_105 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux199_3_105 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux199_4_106 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux199_4_106 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux199_4_106 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux198_3_107 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux198_3_107 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux198_3_107 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux198_4_108 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux198_4_108 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux198_4_108 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux197_3_109 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux197_3_109 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux197_3_109 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux197_4_110 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux197_4_110 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux197_4_110 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux196_3_111 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux196_3_111 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux196_3_111 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux196_4_112 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux196_4_112 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux196_4_112 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux194_3_113 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux194_3_113 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux194_3_113 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux194_4_114 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux194_4_114 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux194_4_114 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux193_3_115 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux193_3_115 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux193_3_115 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux193_4_116 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux193_4_116 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux193_4_116 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux195_3_117 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux195_3_117 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux195_3_117 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux195_4_118 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux195_4_118 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux195_4_118 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux192_3_119 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux192_3_119 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux192_3_119 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/mux192_4_120 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/mux192_4_120 </obj_property>
+         <obj_property name="ObjectShortName">\myMem/mux192_4_120 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/_n0040_inv " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/_n0040_inv </obj_property>
+         <obj_property name="ObjectShortName">\myMem/_n0040_inv </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/address[2]_registers[7][23]_wide_mux_13_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[0][23]_data_in[23]_mux_10_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[1][23]_data_in[23]_mux_9_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[2][23]_data_in[23]_mux_8_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[3][23]_data_in[23]_mux_7_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[4][23]_data_in[23]_mux_6_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[5][23]_data_in[23]_mux_5_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[6][23]_data_in[23]_mux_4_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;0&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;0&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;0&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;1&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;1&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;1&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;2&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;2&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;2&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;3&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;3&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;3&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;4&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;4&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;4&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;5&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;5&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;5&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;6&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;6&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;6&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;7&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;7&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;7&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;8&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;8&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;8&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;9&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;9&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;9&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;10&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;10&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;10&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;11&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;11&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;11&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;12&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;12&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;12&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;13&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;13&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;13&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;14&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;14&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;14&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;15&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;15&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;15&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;16&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;16&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;16&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;17&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;17&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;17&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;18&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;18&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;18&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;19&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;19&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;19&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;20&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;20&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;20&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;21&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;21&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;21&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;22&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;22&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;22&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;23&gt; " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;23&gt; </obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers[7][23]_data_in[23]_mux_3_OUT&lt;23&gt; </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/writeComplete_glue_set_585" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">writeComplete_glue_set_585</obj_property>
+         <obj_property name="ObjectShortName">writeComplete_glue_set_585</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/rw_Address_2_1_586" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rw_Address_2_1_586</obj_property>
+         <obj_property name="ObjectShortName">rw_Address_2_1_586</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/read_write_1_587" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_write_1_587</obj_property>
+         <obj_property name="ObjectShortName">read_write_1_587</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/rw_Address_1_1_588" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rw_Address_1_1_588</obj_property>
+         <obj_property name="ObjectShortName">rw_Address_1_1_588</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\clk_BUFGP/IBUFG_2 " type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">\clk_BUFGP/IBUFG_2 </obj_property>
+         <obj_property name="ObjectShortName">\clk_BUFGP/IBUFG_2 </obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/VCC" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">VCC</obj_property>
+         <obj_property name="ObjectShortName">VCC</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/GND" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">GND</obj_property>
+         <obj_property name="ObjectShortName">GND</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/data_out " type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/data_out [23:0]</obj_property>
+         <obj_property name="ObjectShortName">\myMem/data_out [23:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/_n0088" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">_n0088[2:0]</obj_property>
+         <obj_property name="ObjectShortName">_n0088[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/rw_Address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rw_Address[2:0]</obj_property>
+         <obj_property name="ObjectShortName">rw_Address[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/t_bramController/uut/\myMem/registers_0 " type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">\myMem/registers_0 [191:0]</obj_property>
+         <obj_property name="ObjectShortName">\myMem/registers_0 [191:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

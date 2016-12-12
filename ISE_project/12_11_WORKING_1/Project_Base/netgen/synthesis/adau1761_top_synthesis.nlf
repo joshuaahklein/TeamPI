@@ -1,0 +1,20 @@
+Release 14.2 - netgen P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis
+-ofmt verilog -sim adau1761_top.ngc adau1761_top_synthesis.v  
+
+Reading design 'adau1761_top.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog netlist file
+'C:\Users\nevzheng\Desktop\12_11v1\Project_Base\netgen\synthesis\adau1761_top_sy
+nthesis.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 152248 kilobytes

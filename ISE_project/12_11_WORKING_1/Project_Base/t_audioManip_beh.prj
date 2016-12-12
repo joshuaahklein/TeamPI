@@ -1,0 +1,7 @@
+verilog work "BRAM.v"
+verilog work "debounce.v"
+verilog work "bramController.v"
+verilog work "audio_manip.v"
+verilog work "t_audioManip.v"
+verilog work "ipcore_dir/clk_20MHZ/example_design/clk_20MHZ_exdes.v"
+verilog work "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

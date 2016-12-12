@@ -1,0 +1,945 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml adau1761_top.twx adau1761_top.ncd -o adau1761_top.twr
+adau1761_top.pcf -ucf adau1761_constraints.ucf
+
+Design file:              adau1761_top.ncd
+Physical constraint file: adau1761_top.pcf
+Device,package,speed:     xc7z020,clg484,C,-3 (ADVANCED 1.02 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   4.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: i_clocking/mmcm_adv_inst/CLKIN1
+  Logical resource: i_clocking/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y0.CLKIN1
+  Clock network: i_clocking/clkin1
+--------------------------------------------------------------------------------
+Slack: 6.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 2.000ns (Tmmcmpw_CLKIN1_100_150)
+  Physical resource: i_clocking/mmcm_adv_inst/CLKIN1
+  Logical resource: i_clocking/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y0.CLKIN1
+  Clock network: i_clocking/clkin1
+--------------------------------------------------------------------------------
+Slack: 8.751ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.249ns (800.641MHz) (Tmmcmper_CLKIN(Finmax))
+  Physical resource: i_clocking/mmcm_adv_inst/CLKIN1
+  Logical resource: i_clocking/mmcm_adv_inst/CLKIN1
+  Location pin: MMCME2_ADV_X0Y0.CLKIN1
+  Clock network: i_clocking/clkin1
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "i_clocking/clkout0" derived from  
+NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;  multiplied by 2.08 to 20.833 
+nS   
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 402108331217 paths analyzed, 10373 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  13.408ns.
+--------------------------------------------------------------------------------
+
+Paths for end point audio_manip1/ALGO/sum_63 (SLICE_X93Y37.CIN), 31668614089 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.425ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_63 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.274ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_63
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT0   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN0    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_0
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.178   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_63
+    -------------------------------------------------  ---------------------------
+    Total                                     13.274ns (9.480ns logic, 3.794ns route)
+                                                       (71.4% logic, 28.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.425ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_63 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.274ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_63
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT9   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_9
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.178   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_63
+    -------------------------------------------------  ---------------------------
+    Total                                     13.274ns (9.480ns logic, 3.794ns route)
+                                                       (71.4% logic, 28.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.425ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_63 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.274ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_63
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT1   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN1    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_1
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.178   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_63
+    -------------------------------------------------  ---------------------------
+    Total                                     13.274ns (9.480ns logic, 3.794ns route)
+                                                       (71.4% logic, 28.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_manip1/ALGO/sum_61 (SLICE_X93Y37.CIN), 31668614089 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.429ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_61 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.270ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_61
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT0   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN0    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_0
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.174   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_61
+    -------------------------------------------------  ---------------------------
+    Total                                     13.270ns (9.476ns logic, 3.794ns route)
+                                                       (71.4% logic, 28.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.429ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_61 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.270ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_61
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT9   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_9
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.174   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_61
+    -------------------------------------------------  ---------------------------
+    Total                                     13.270ns (9.476ns logic, 3.794ns route)
+                                                       (71.4% logic, 28.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.429ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_61 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.270ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_61
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT1   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN1    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_1
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.174   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_61
+    -------------------------------------------------  ---------------------------
+    Total                                     13.270ns (9.476ns logic, 3.794ns route)
+                                                       (71.4% logic, 28.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_manip1/ALGO/sum_62 (SLICE_X93Y37.CIN), 31668614089 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     7.479ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_62 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.220ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_62
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT0   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN0    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_0
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.124   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_62
+    -------------------------------------------------  ---------------------------
+    Total                                     13.220ns (9.426ns logic, 3.794ns route)
+                                                       (71.3% logic, 28.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.479ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_62 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.220ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_62
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT9   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_9
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.124   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_62
+    -------------------------------------------------  ---------------------------
+    Total                                     13.220ns (9.426ns logic, 3.794ns route)
+                                                       (71.3% logic, 28.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     7.479ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               audio_manip1/myFFT/my_fft/blk000008e3 (FF)
+  Destination:          audio_manip1/ALGO/sum_62 (FF)
+  Requirement:          20.833ns
+  Data Path Delay:      13.220ns (Levels of Logic = 14)
+  Clock Path Skew:      0.004ns (0.642 - 0.638)
+  Source Clock:         clk_48 rising at 0.000ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.138ns
+
+  Clock Uncertainty:          0.138ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.266ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: audio_manip1/myFFT/my_fft/blk000008e3 to audio_manip1/ALGO/sum_62
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X59Y39.AMUX    Tshcko                0.431   audio_manip1/FFT_real<23>
+                                                       audio_manip1/myFFT/my_fft/blk000008e3
+    DSP48_X4Y13.A16      net (fanout=4)        1.392   audio_manip1/FFT_real<16>
+    DSP48_X4Y13.PCOUT1   Tdspdo_A_PCOUT_MULT   2.970   audio_manip1/ALGO/Mmult_n0036_submult_0
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_0
+    DSP48_X4Y14.PCIN1    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_0_PCOUT_to_Mmult_n0036_submult_01_PCIN_1
+    DSP48_X4Y14.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_01
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_01
+    DSP48_X4Y15.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_01_PCOUT_to_Mmult_n0036_submult_02_PCIN_9
+    DSP48_X4Y15.PCOUT9   Tdspdo_PCIN_PCOUT     1.255   audio_manip1/ALGO/Mmult_n0036_submult_02
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_02
+    DSP48_X4Y16.PCIN9    net (fanout=1)        0.002   audio_manip1/ALGO/Mmult_n0036_submult_02_PCOUT_to_Mmult_n0036_submult_03_PCIN_9
+    DSP48_X4Y16.P0       Tdspdo_PCIN_P         1.107   audio_manip1/ALGO/Mmult_n0036_submult_03
+                                                       audio_manip1/ALGO/Mmult_n0036_submult_03
+    SLICE_X91Y34.A3      net (fanout=2)        1.000   audio_manip1/ALGO/Mmult_n0036_submult_0_34
+    SLICE_X91Y34.COUT    Topcya                0.492   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_lut<34>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmult_n0036_Madd_cy<37>
+    SLICE_X91Y35.AMUX    Tcina                 0.286   audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+                                                       audio_manip1/ALGO/Mmult_n0036_Madd_cy<41>
+    SLICE_X92Y32.C2      net (fanout=2)        0.708   audio_manip1/ALGO/n0036<38>
+    SLICE_X92Y32.COUT    Topcyc                0.383   audio_manip1/ALGO/avg<27>
+                                                       audio_manip1/ALGO/Madd_n0055_lut<38>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<39>
+    SLICE_X92Y33.COUT    Tbyp                  0.092   audio_manip1/ALGO/avg<31>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<43>
+    SLICE_X92Y34.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<47>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<47>
+    SLICE_X92Y35.COUT    Tbyp                  0.092   audio_manip1/ALGO/Madd_n0055_cy<51>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Madd_n0055_cy<51>
+    SLICE_X92Y36.DMUX    Tcind                 0.362   audio_manip1/ALGO/Madd_n0055_cy<55>
+                                                       audio_manip1/ALGO/Madd_n0055_cy<55>
+    SLICE_X93Y35.D4      net (fanout=1)        0.688   audio_manip1/ALGO/n0055<55>
+    SLICE_X93Y35.COUT    Topcyd                0.396   audio_manip1/ALGO/sum<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_lut<55>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<55>
+    SLICE_X93Y36.COUT    Tbyp                  0.089   audio_manip1/ALGO/sum<59>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CIN     net (fanout=1)        0.000   audio_manip1/ALGO/Mmux__n0064_rs_cy<59>
+    SLICE_X93Y37.CLK     Tcinck                0.124   audio_manip1/ALGO/sum<63>
+                                                       audio_manip1/ALGO/Mmux__n0064_rs_xor<63>
+                                                       audio_manip1/ALGO/sum_62
+    -------------------------------------------------  ---------------------------
+    Total                                     13.220ns (9.426ns logic, 3.794ns route)
+                                                       (71.3% logic, 28.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: PERIOD analysis for net "i_clocking/clkout0" derived from
+ NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;
+ multiplied by 2.08 to 20.833 nS  
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_manip1/BC/myMem/Mram_registers6 (RAMB36_X5Y9.ADDRARDADDRU4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.000ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               audio_manip1/BC/rw_Address_2 (FF)
+  Destination:          audio_manip1/BC/myMem/Mram_registers6 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.265ns (Levels of Logic = 0)
+  Clock Path Skew:      0.265ns (0.904 - 0.639)
+  Source Clock:         clk_48 rising at 20.833ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: audio_manip1/BC/rw_Address_2 to audio_manip1/BC/myMem/Mram_registers6
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X105Y52.CQ          Tcko                  0.141   audio_manip1/BC/rw_Address<3>
+                                                            audio_manip1/BC/rw_Address_2
+    RAMB36_X5Y9.ADDRARDADDRU4 net (fanout=15)       0.307   audio_manip1/BC/rw_Address<2>
+    RAMB36_X5Y9.CLKARDCLKU    Trckc_ADDRA (-Th)     0.183   audio_manip1/BC/myMem/Mram_registers6
+                                                            audio_manip1/BC/myMem/Mram_registers6
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.265ns (-0.042ns logic, 0.307ns route)
+                                                            (-15.8% logic, 115.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_manip1/BC/myMem/Mram_registers6 (RAMB36_X5Y9.ADDRARDADDRL4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.001ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               audio_manip1/BC/rw_Address_2 (FF)
+  Destination:          audio_manip1/BC/myMem/Mram_registers6 (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.266ns (Levels of Logic = 0)
+  Clock Path Skew:      0.265ns (0.904 - 0.639)
+  Source Clock:         clk_48 rising at 20.833ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: audio_manip1/BC/rw_Address_2 to audio_manip1/BC/myMem/Mram_registers6
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X105Y52.CQ          Tcko                  0.141   audio_manip1/BC/rw_Address<3>
+                                                            audio_manip1/BC/rw_Address_2
+    RAMB36_X5Y9.ADDRARDADDRL4 net (fanout=15)       0.308   audio_manip1/BC/rw_Address<2>
+    RAMB36_X5Y9.CLKARDCLKL    Trckc_ADDRA (-Th)     0.183   audio_manip1/BC/myMem/Mram_registers6
+                                                            audio_manip1/BC/myMem/Mram_registers6
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.266ns (-0.042ns logic, 0.308ns route)
+                                                            (-15.8% logic, 115.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point audio_manip1/myFFT/my_fft/blk0000026e (SLICE_X46Y33.DI), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.003ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               audio_manip1/myFFT/my_fft/blk0000085b (FF)
+  Destination:          audio_manip1/myFFT/my_fft/blk0000026e (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.226ns (Levels of Logic = 0)
+  Clock Path Skew:      0.223ns (0.721 - 0.498)
+  Source Clock:         clk_48 rising at 20.833ns
+  Destination Clock:    clk_48 rising at 20.833ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: audio_manip1/myFFT/my_fft/blk0000085b to audio_manip1/myFFT/my_fft/blk0000026e
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X52Y34.BMUX    Tshcko                0.181   audio_manip1/myFFT/my_fft/sig000000e6
+                                                       audio_manip1/myFFT/my_fft/blk0000085b
+    SLICE_X46Y33.DI      net (fanout=1)        0.228   audio_manip1/myFFT/my_fft/sig000000e1
+    SLICE_X46Y33.CLK     Tdh         (-Th)     0.183   audio_manip1/myFFT/my_fft/sig000004ec
+                                                       audio_manip1/myFFT/my_fft/blk0000026e
+    -------------------------------------------------  ---------------------------
+    Total                                      0.226ns (-0.002ns logic, 0.228ns route)
+                                                       (-0.9% logic, 100.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "i_clocking/clkout0" derived from
+ NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;
+ multiplied by 2.08 to 20.833 nS  
+
+--------------------------------------------------------------------------------
+Slack: 18.599ns (period - min period limit)
+  Period: 20.833ns
+  Min period limit: 2.234ns (447.628MHz) (Trper_CLKA)
+  Physical resource: audio_manip1/myFFT/my_fft/blk000000b0/blk0000014c/CLKARDCLK
+  Logical resource: audio_manip1/myFFT/my_fft/blk000000b0/blk0000014c/CLKARDCLK
+  Location pin: RAMB18_X1Y9.CLKARDCLK
+  Clock network: clk_48
+--------------------------------------------------------------------------------
+Slack: 18.599ns (period - min period limit)
+  Period: 20.833ns
+  Min period limit: 2.234ns (447.628MHz) (Trper_CLKA)
+  Physical resource: audio_manip1/myFFT/my_fft/blk000000b0/blk0000014c/CLKBWRCLK
+  Logical resource: audio_manip1/myFFT/my_fft/blk000000b0/blk0000014c/CLKBWRCLK
+  Location pin: RAMB18_X1Y9.CLKBWRCLK
+  Clock network: clk_48
+--------------------------------------------------------------------------------
+Slack: 18.599ns (period - min period limit)
+  Period: 20.833ns
+  Min period limit: 2.234ns (447.628MHz) (Trper_CLKA)
+  Physical resource: audio_manip1/myFFT/my_fft/blk000000b0/blk0000014d/CLKARDCLK
+  Logical resource: audio_manip1/myFFT/my_fft/blk000000b0/blk0000014d/CLKARDCLK
+  Location pin: RAMB18_X1Y10.RDCLK
+  Clock network: clk_48
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PERIOD analysis for net "i_clocking/clkfbout" derived from  
+NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;  multiplied by 5.00 to 50 nS 
+and duty cycle corrected to HIGH 25 nS  
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.592ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: PERIOD analysis for net "i_clocking/clkfbout" derived from
+ NET "i_clocking/clkin1" PERIOD = 10 ns HIGH 50%;
+ multiplied by 5.00 to 50 nS and duty cycle corrected to HIGH 25 nS 
+
+--------------------------------------------------------------------------------
+Slack: 48.408ns (period - min period limit)
+  Period: 50.000ns
+  Min period limit: 1.592ns (628.141MHz) (Tbcper_I(Fmax))
+  Physical resource: i_clocking/clkf_buf/I0
+  Logical resource: i_clocking/clkf_buf/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: i_clocking/clkfbout
+--------------------------------------------------------------------------------
+Slack: 48.751ns (period - min period limit)
+  Period: 50.000ns
+  Min period limit: 1.249ns (800.641MHz) (Tmmcmper_CLKFBOUT(Foutmax))
+  Physical resource: i_clocking/mmcm_adv_inst/CLKFBOUT
+  Logical resource: i_clocking/mmcm_adv_inst/CLKFBOUT
+  Location pin: MMCME2_ADV_X0Y0.CLKFBOUT
+  Clock network: i_clocking/clkfbout
+--------------------------------------------------------------------------------
+Slack: 163.360ns (max period limit - period)
+  Period: 50.000ns
+  Max period limit: 213.360ns (4.687MHz) (Tmmcmper_CLKFBOUT(Foutmin))
+  Physical resource: i_clocking/mmcm_adv_inst/CLKFBOUT
+  Logical resource: i_clocking/mmcm_adv_inst/CLKFBOUT
+  Location pin: MMCME2_ADV_X0Y0.CLKFBOUT
+  Clock network: i_clocking/clkfbout
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for i_clocking/clkin1
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|i_clocking/clkin1              |     10.000ns|      4.000ns|      6.436ns|            0|            0|            0| 402108331217|
+| i_clocking/clkout0            |     20.833ns|     13.408ns|          N/A|            0|            0| 402108331217|            0|
+| i_clocking/clkfbout           |     50.000ns|      1.592ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_100
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |   13.408|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 402108331217 paths, 0 nets, and 11373 connections
+
+Design statistics:
+   Minimum period:  13.408ns{1}   (Maximum frequency:  74.582MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sun Dec 11 23:44:53 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 657 MB
+
+
+

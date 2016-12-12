@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/ssshahin/Desktop/12_11v2/12_11v2/Project_Base/test_FULLFFT_isim_beh.exe" -prj "C:/Users/ssshahin/Desktop/12_11v2/12_11v2/Project_Base/test_FULLFFT_beh.prj" "work.test_FULLFFT" "work.glbl" 

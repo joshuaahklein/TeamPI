@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v" Line 84: Redeclaration of ansi port <arg fmt="%s" index="1">FFT_DONE</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v" Line 79: Assignment to <arg fmt="%s" index="1">FFT_ready</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v" Line 80: Assignment to <arg fmt="%s" index="1">FFT_busy</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v" Line 81: Assignment to <arg fmt="%s" index="1">out_index</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\speech_algo.v" Line 45: Assignment to <arg fmt="%s" index="1">counter</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v" Line 178: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">readAddress</arg>&gt;. Formal port size is <arg fmt="%d" index="2">13</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\adau1761_top.vhd</arg>&quot; line <arg fmt="%s" index="2">111</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_clocking</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\i2c.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">outputs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_i3c2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\i2c.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">reg_addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_i3c2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\i2c.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">reg_data</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_i3c2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\i2c.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">reg_write</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_i3c2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\i2c.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">debug_scl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_i3c2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\i2c.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">debug_sda</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_i3c2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\i2c.vhd</arg>&quot; line <arg fmt="%s" index="2">58</arg>: Output port &lt;<arg fmt="%s" index="3">error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Inst_i3c2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">xn_index</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">myFFT</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">xk_index</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">myFFT</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">myFFT</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\ssshahin\Desktop\12_11v2\12_11v2\Project_Base\audio_manip.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">busy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">myFFT</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">readAddress</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clear</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000009f</arg> in unit <arg fmt="%s" index="2">blk0000009f</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a0</arg> in unit <arg fmt="%s" index="2">blk000000a0</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a1</arg> in unit <arg fmt="%s" index="2">blk000000a1</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a2</arg> in unit <arg fmt="%s" index="2">blk000000a2</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a3</arg> in unit <arg fmt="%s" index="2">blk000000a3</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a4</arg> in unit <arg fmt="%s" index="2">blk000000a4</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a5</arg> in unit <arg fmt="%s" index="2">blk000000a5</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a6</arg> in unit <arg fmt="%s" index="2">blk000000a6</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a7</arg> in unit <arg fmt="%s" index="2">blk000000a7</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a8</arg> in unit <arg fmt="%s" index="2">blk000000a8</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000a9</arg> in unit <arg fmt="%s" index="2">blk000000a9</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000aa</arg> in unit <arg fmt="%s" index="2">blk000000aa</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000ab</arg> in unit <arg fmt="%s" index="2">blk000000ab</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000ac</arg> in unit <arg fmt="%s" index="2">blk000000ac</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000ad</arg> in unit <arg fmt="%s" index="2">blk000000ad</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000ae</arg> in unit <arg fmt="%s" index="2">blk000000ae</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk000000af</arg> in unit <arg fmt="%s" index="2">blk000000af</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000014c</arg> in unit <arg fmt="%s" index="2">blk0000014c</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000014d</arg> in unit <arg fmt="%s" index="2">blk0000014d</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000014e</arg> in unit <arg fmt="%s" index="2">blk0000014e</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000014f</arg> in unit <arg fmt="%s" index="2">blk0000014f</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000150</arg> in unit <arg fmt="%s" index="2">blk00000150</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000151</arg> in unit <arg fmt="%s" index="2">blk00000151</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000152</arg> in unit <arg fmt="%s" index="2">blk00000152</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000153</arg> in unit <arg fmt="%s" index="2">blk00000153</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000154</arg> in unit <arg fmt="%s" index="2">blk00000154</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000155</arg> in unit <arg fmt="%s" index="2">blk00000155</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000156</arg> in unit <arg fmt="%s" index="2">blk00000156</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000157</arg> in unit <arg fmt="%s" index="2">blk00000157</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000158</arg> in unit <arg fmt="%s" index="2">blk00000158</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk00000159</arg> in unit <arg fmt="%s" index="2">blk00000159</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000015a</arg> in unit <arg fmt="%s" index="2">blk0000015a</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000015b</arg> in unit <arg fmt="%s" index="2">blk0000015b</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000015c</arg> in unit <arg fmt="%s" index="2">blk0000015c</arg> of type <arg fmt="%s" index="3">RAMB18</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000105a</arg> in unit <arg fmt="%s" index="2">blk0000105a</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000105b</arg> in unit <arg fmt="%s" index="2">blk0000105b</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000105c</arg> in unit <arg fmt="%s" index="2">blk0000105c</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">blk0000105d</arg> in unit <arg fmt="%s" index="2">blk0000105d</arg> of type <arg fmt="%s" index="3">DSP48E</arg> has been replaced by <arg fmt="%s" index="4">DSP48E1</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1902" delta="old" >Value <arg fmt="%s" index="1">0</arg> for attribute <arg fmt="%s" index="2">AUTORESET_PATDET</arg> of instance <arg fmt="%s" index="3">blk0000105a</arg> in unit <arg fmt="%s" index="4">blk0000105a</arg> is not supported
+</msg>
+
+<msg type="warning" file="Xst" num="1902" delta="old" >Value <arg fmt="%s" index="1">0</arg> for attribute <arg fmt="%s" index="2">AUTORESET_PATDET</arg> of instance <arg fmt="%s" index="3">blk0000105b</arg> in unit <arg fmt="%s" index="4">blk0000105b</arg> is not supported
+</msg>
+
+<msg type="warning" file="Xst" num="1902" delta="old" >Value <arg fmt="%s" index="1">0</arg> for attribute <arg fmt="%s" index="2">AUTORESET_PATDET</arg> of instance <arg fmt="%s" index="3">blk0000105c</arg> in unit <arg fmt="%s" index="4">blk0000105c</arg> is not supported
+</msg>
+
+<msg type="warning" file="Xst" num="1902" delta="old" >Value <arg fmt="%s" index="1">0</arg> for attribute <arg fmt="%s" index="2">AUTORESET_PATDET</arg> of instance <arg fmt="%s" index="3">blk0000105d</arg> in unit <arg fmt="%s" index="4">blk0000105d</arg> is not supported
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">avg_51</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ALGO</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">12 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;avg_52&gt; &lt;avg_53&gt; &lt;avg_54&gt; &lt;avg_55&gt; &lt;avg_56&gt; &lt;avg_57&gt; &lt;avg_58&gt; &lt;avg_59&gt; &lt;avg_60&gt; &lt;avg_61&gt; &lt;avg_62&gt; &lt;avg_63&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">avg_51</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ALGO</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">myMem/Mram_registers</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Inst_adau1761_configuration_data/Mram_address[9]_GND_43_o_wide_mux_0_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">avg_51</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_52</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_53</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_54</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_55</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_56</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_57</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_58</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_59</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_60</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_61</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_62</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">avg_63</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">speech_algo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mmult_n0036_submult_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speech_algo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mmult_n0038_submult_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">speech_algo</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">sr_out_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sr_out_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sr_out_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sr_out_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sr_out_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sr_out_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sr_out_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">sr_out_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2s_data_interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Inst_i3c2/bitcount_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">i2c</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

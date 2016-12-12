@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Sun Dec 11 16:25:48 2016
+# Process ID: 5048
+# Log file: X:/12-4-16_v2/12-4-16_v2/Project_Base/planAhead_run_1/planAhead.log
+# Journal file: X:/12-4-16_v2/12-4-16_v2/Project_Base/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source X:/12-4-16_v2/12-4-16_v2/Project_Base/pa.fromHdl.tcl
