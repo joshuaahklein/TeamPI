@@ -24,7 +24,7 @@
   The algorithm takes the average power spectra of the voice recorded and compares that to a threshold to determine what has been said.
   
 ## Acknowledgements
-  Credit to the audio codec used in this project goes to HampsterWorks Zedboard Audio Project: http://hamsterworks.co.nz/mediawiki/index.php/Zedboard_Audio
+  Credit to the audio codec used in this project goes to HamsterWorks Zedboard Audio Project: http://hamsterworks.co.nz/mediawiki/index.php/Zedboard_Audio
   This project used a generated IP core for the FFT module.
 
 ## Authors
