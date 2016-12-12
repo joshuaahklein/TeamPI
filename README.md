@@ -25,7 +25,7 @@
   
 ## Acknowledgements
   Credit to the audio codec used in this project goes to HamsterWorks Zedboard Audio Project: http://hamsterworks.co.nz/mediawiki/index.php/Zedboard_Audio
-  This project used a generated IP core for the FFT module.
+  \nThis project used a generated IP core for the FFT module.
 
 ## Authors
 
